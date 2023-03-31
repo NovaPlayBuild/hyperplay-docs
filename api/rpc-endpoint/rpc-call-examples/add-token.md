@@ -6,14 +6,15 @@ This method allows developers to add a custom token to the token list of a MetaM
 
 Parameters
 
-* `type` : In the future, other standards will be supported
-* `address` : The address of the token contract
-* `symbol`: A ticker symbol or shorthand, up to 11 characters
-* `decimals`: The number of token decimals
-* `image:` A string url of the token logo
+- `type` : In the future, other standards will be supported
+- `address` : The address of the token contract
+- `symbol`: A ticker symbol or shorthand, up to 11 characters
+- `decimals`: The number of token decimals
+- `image:` A string url of the token logo
 
 {% tabs %}
 {% tab title="curl" %}
+
 ```bash
 curl --location --request POST "localhost:9680/rpc" \
 --header 'Content-Type: application/json' \
@@ -35,9 +36,11 @@ curl --location --request POST "localhost:9680/rpc" \
    }
 }'
 ```
+
 {% endtab %}
 
 {% tab title="Unity" %}
+
 ```csharp
 using System.Collections;
 using UnityEngine;
@@ -67,6 +70,7 @@ public class AddToken : MonoBehaviour
 }
 
 ```
+
 {% endtab %}
 
 {% tab title="Unreal Blueprints" %}
@@ -92,28 +96,55 @@ End Object
 
 ```
 
+{% endtab %}
+{% tab title="Unreal Engine C++" %}
+
+```cpp
+#include "HyperPlayUtils.h"
+#include "Endpoints/RpcCall.h"
+
+void OnRpcResponse(FString Response, int32 StatusCode)
+{
+	const bool bWasSuccessful = HyperPlayUtils::StatusCodeIsSuccess(StatusCode);
+
+	UE_LOG(LogTemp, Display, TEXT("Rpc Personal Sign Success: %s"), bWasSuccessful ? "true" : "false");
+	UE_LOG(LogTemp, Display, TEXT("Rpc Personal Sign Response: %s"), *Response);
+}
+
+int main(){
+    const FString request("{\"method\": \"wallet_watchAsset\",\"params\": {\"type\": \"ERC20\",\"options\": {\"address\": \"0xdAC17F958D2ee523a2206206994597C13D831ec7\",\"symbol\": \"USDT\",\"decimals\": 6,\"image\": \"chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/images/contract/usdt.svg\"}}}")
+
+	URpcCall* RpcCallInstance = URpcCall::RpcCall(nullptr,
+		request,
+		1);
+	RpcCallInstance->GetOnCompletedDelegate().AddRaw(this, &OnRpcResponse);
+	RpcCallInstance->Activate();
+}
+```
 
 {% endtab %}
 {% endtabs %}
 
 ## Response
 
-
-
 {% tabs %}
 {% tab title="Response" %}
+
 ```
 true
 ```
+
 {% endtab %}
 
 {% tab title="Error" %}
 Errors will have an HTTP response status 500-599
 
 ```json
-{    
-    "message": "error description here"
+{
+  "message": "error description here"
 }
 ```
+
 {% endtab %}
+
 {% endtabs %}

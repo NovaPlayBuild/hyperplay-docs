@@ -8,10 +8,9 @@ Ask the user to sign typed data
 
 Learn more: [https://docs.metamask.io/guide/signing-data.html#sign-typed-data-v3](https://docs.metamask.io/guide/signing-data.html#sign-typed-data-v3)
 
-
-
 {% tabs %}
 {% tab title="curl" %}
+
 ```bash
 curl --location --request POST 'localhost:9680/rpc' \
 --header 'Content-Type: application/json' \
@@ -29,9 +28,11 @@ curl --location --request POST 'localhost:9680/rpc' \
 }
 '
 ```
+
 {% endtab %}
 
 {% tab title="Unity" %}
+
 ```csharp
 using System.Collections;
 using UnityEngine;
@@ -61,9 +62,11 @@ public class SignTypedDataV3 : MonoBehaviour
     }
 }
 ```
+
 {% endtab %}
 
 {% tab title="Unreal Blueprints" %}
+
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_AsyncAction Name="K2Node_AsyncAction_2"
    ProxyFactoryFunctionName="RpcCall"
@@ -197,6 +200,46 @@ End Object
 
 ```
 
+{% endtab %}
+{% tab title="Unreal Engine C++" %}
+
+```cpp
+#include "HyperPlayUtils.h"
+#include "Endpoints/RpcCall.h"
+#include "Endpoints/GetAccounts.h"
+
+void OnRpcResponse(FString Response, int32 StatusCode)
+{
+	const bool bWasSuccessful = HyperPlayUtils::StatusCodeIsSuccess(StatusCode);
+
+	UE_LOG(LogTemp, Display, TEXT("Rpc get accounts Success: %s"), bWasSuccessful ? "true" : "false");
+	UE_LOG(LogTemp, Display, TEXT("Rpc sign typed data v3 Response: %s"), *Response);
+}
+
+void OnAcctResponse(FString Response, int32 StatusCode)
+{
+	const bool bWasSuccessful = HyperPlayUtils::StatusCodeIsSuccess(StatusCode);
+
+	UE_LOG(LogTemp, Display, TEXT("SendContract Success: %s"), bWasSuccessful ? "true" : "false");
+	UE_LOG(LogTemp, Display, TEXT("SendContract Response: %s"), *Response);
+
+	const FString request("{\"method\":\"eth_signTypedData_v3\",\"params\":[\""
+		+ Response
+		+ "\",\"{\\\"types\\\": {\\\"EIP712Domain\\\": [{\\\"name\\\": \\\"name\\\",\\\"type\\\": \\\"string\\\"},{\\\"name\\\": \\\"version\\\",\\\"type\\\": \\\"string\\\"}],\\\"LoginData\\\": [{\\\"name\\\": \\\"game\\\",\\\"type\\\": \\\"string\\\"},{\\\"name\\\": \\\"contents\\\",\\\"type\\\": \\\"string\\\"}]},\\\"primaryType\\\": \\\"LoginData\\\",\\\"domain\\\": {\\\"name\\\": \\\"HyperPlay\\\",\\\"version\\\": \\\"1\\\"},\\\"message\\\": {\\\"game\\\": \\\"HyperPlay FPS Demo\\\",\\\"contents\\\": \\\"Sign this message to log in!\\\"}}\"]}");
+
+	URpcCall* RpcCallInstance = URpcCall::RpcCall(nullptr,
+		request,
+		5);
+	RpcCallInstance->GetOnCompletedDelegate().AddRaw(this, &OnRpcResponse);
+	RpcCallInstance->Activate();
+}
+
+int main(){
+   UGetAccounts* GetAccountsInstance = UGetAccounts::GetAccounts(nullptr, 5, "");
+   GetAccountsInstance->GetOnCompletedDelegate().AddRaw(this, &OnAcctResponse);
+   GetAccountsInstance->Activate();
+}
+```
 
 {% endtab %}
 {% endtabs %}

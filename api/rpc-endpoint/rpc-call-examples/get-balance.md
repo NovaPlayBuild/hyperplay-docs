@@ -4,11 +4,12 @@
 
 There are two params
 
-* Address of wallet
-* `latest` which gets the latest balance
+- Address of wallet
+- `latest` which gets the latest balance
 
 {% tabs %}
 {% tab title="curl" %}
+
 ```bash
 curl --location --request POST "localhost:9680/rpc" \
 --header "Content-Type: application/json" \
@@ -22,9 +23,11 @@ curl --location --request POST "localhost:9680/rpc" \
    }
 }'
 ```
+
 {% endtab %}
 
 {% tab title="Unity" %}
+
 ```csharp
 using System.Collections;
 using UnityEngine;
@@ -54,9 +57,11 @@ public class GetBalance: MonoBehaviour
 }
 
 ```
+
 {% endtab %}
 
 {% tab title="Unreal Blueprints" %}
+
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_AsyncAction Name="K2Node_AsyncAction_1"
    ProxyFactoryFunctionName="RpcCall"
@@ -187,6 +192,32 @@ End Object
 
 ```
 
+{% endtab %}
+
+{% tab title="Unreal Engine C++" %}
+
+```cpp
+#include "HyperPlayUtils.h"
+#include "Endpoints/RpcCall.h"
+
+void OnRpcResponse(FString Response, int32 StatusCode)
+{
+	const bool bWasSuccessful = HyperPlayUtils::StatusCodeIsSuccess(StatusCode);
+
+	UE_LOG(LogTemp, Display, TEXT("Rpc Get Balance Success: %s"), bWasSuccessful ? "true" : "false");
+	UE_LOG(LogTemp, Display, TEXT("Rpc Get Balance Response: %s"), *Response);
+}
+
+int main(){
+   const FString request("{ \"request\":{ \"method\": \"eth_getBalance\", \"params\": [\"0x638105AA1B69406560f6428aEFACe3DB9da83c64\", \"latest\"] }, \"chain\":{ \"chainId\":\"5\" } }");
+
+	URpcCall* RpcCallInstance = URpcCall::RpcCall(nullptr,
+		request,
+		5);
+	RpcCallInstance->GetOnCompletedDelegate().AddRaw(this, &OnRpcResponse);
+	RpcCallInstance->Activate();
+}
+```
 
 {% endtab %}
 {% endtabs %}
@@ -197,22 +228,25 @@ Balance will be in hexadecimal. Once converted to decimal, the unit will be in w
 
 For example, hexadecimal `0x236a4c456ef7c0` to base10 is `9968499999832000`
 
-Base10 `9968499999832000 wei`  to ETH is `0.009968499999832 ETH`
+Base10 `9968499999832000 wei` to ETH is `0.009968499999832 ETH`
 
 {% tabs %}
 {% tab title="Resonse" %}
+
 ```
 0x236a4c456ef7c0
 ```
+
 {% endtab %}
 
 {% tab title="Error" %}
 Errors will have an HTTP response status 500-599
 
 ```json
-{    
-    "message": "error description here"
+{
+  "message": "error description here"
 }
 ```
+
 {% endtab %}
 {% endtabs %}

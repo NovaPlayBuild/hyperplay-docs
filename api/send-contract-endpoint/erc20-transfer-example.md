@@ -6,6 +6,7 @@ This request sends ERC-20 tokens.
 
 {% tabs %}
 {% tab title="curl" %}
+
 ```bash
 curl --location --request POST "localhost:9680/sendContract" \
 --header 'Content-Type: application/json' \
@@ -20,9 +21,11 @@ curl --location --request POST "localhost:9680/sendContract" \
     }
 }'
 ```
+
 {% endtab %}
 
 {% tab title="Unity" %}
+
 ```csharp
 using System.Collections;
 using UnityEngine;
@@ -53,6 +56,7 @@ public class SendContract: MonoBehaviour
 }
 
 ```
+
 {% endtab %}
 
 {% tab title="Unreal Blueprints" %}
@@ -91,6 +95,42 @@ Begin Object Class=/Script/BlueprintGraph.K2Node_MakeArray Name="K2Node_MakeArra
 End Object
 
 ```
+
+{% endtab %}
+
+{% tab title="Unreal Engine C++" %}
+
+```cpp
+#include "HyperPlayUtils.h"
+#include "Endpoints/SendContract.h"
+
+void OnResponse(FString Response, int32 StatusCode)
+{
+	const bool bWasSuccessful = HyperPlayUtils::StatusCodeIsSuccess(StatusCode);
+
+	UE_LOG(LogTemp, Display, TEXT("SendContract Success: %s"), bWasSuccessful ? "true" : "false");
+	UE_LOG(LogTemp, Display, TEXT("SendContract Response: %s"), *Response);
+}
+
+int main(){
+    const FString address("0x62bb848ec84D08d55Ea70a19118300bae6658F18");
+    const FString amount("100000000000000000000");
+    TArray<FString> params;
+    params.Add(address);
+    params.Add(amount);
+    USendContract* SendContractInstance = USendContract::SendContract(nullptr,
+        "0xBA62BCfcAaFc6622853cca2BE6Ac7d845BC0f2Dc",
+        "transfer",
+        "",
+        params,
+        -1,
+        "",
+        5);
+    SendContractInstance->GetOnCompletedDelegate().AddRaw(this, &OnResponse);
+    SendContractInstance->Activate();
+}
+```
+
 {% endtab %}
 {% endtabs %}
 
@@ -100,18 +140,21 @@ The transaction hash
 
 {% tabs %}
 {% tab title="Response" %}
+
 ```
 0x1b8368d5b67a914a49c76984776849ee3c56a4ac28c92d98103ef18e7215ae2b
 ```
+
 {% endtab %}
 
 {% tab title="Error" %}
 Errors will have an HTTP response status 500-599
 
 ```json
-{    
-    "message": "error description here"
+{
+  "message": "error description here"
 }
 ```
+
 {% endtab %}
 {% endtabs %}
