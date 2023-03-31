@@ -8,6 +8,7 @@ Network information, including a directory of public RPC endpoints, can be found
 
 {% tabs %}
 {% tab title="curl" %}
+
 ```bash
 curl --location --request POST "localhost:9680/rpc" \
 --header 'Content-Type: application/json' \
@@ -31,9 +32,11 @@ curl --location --request POST "localhost:9680/rpc" \
    }
 }'
 ```
+
 {% endtab %}
 
 {% tab title="Unity" %}
+
 ```csharp
 using System.Collections;
 using UnityEngine;
@@ -63,6 +66,7 @@ public class SwitchNetwork : MonoBehaviour
 }
 
 ```
+
 {% endtab %}
 
 {% tab title="Unreal Blueprints" %}
@@ -95,28 +99,52 @@ Then copy and paste the following into the Chain Metadata input pin
 {"chainName": "Binance Smart Chain", "nativeCurrency": {"name": "Binance Coin", "symbol": "BNB", "decimals": 18}, "rpcUrls": ["https://bsc-dataseed4.binance.org"], "blockExplorerUrls": ["https://bscscan.com"]}
 ```
 
-
 {% endtab %}
 {% endtabs %}
 
 ## Response
 
-
-
 {% tabs %}
 {% tab title="Response" %}
+
 ```
 ["0x638105AA1B69406560f6428aEFACe3DB9da83c64"]
 ```
+
 {% endtab %}
 
 {% tab title="Error" %}
 Errors will have an HTTP response status 500-599
 
 ```json
-{    
-    "message": "error description here"
+{
+  "message": "error description here"
 }
 ```
+
+{% endtab %}
+
+{% tab title="Unreal Engine C++" %}
+
+```cpp
+#include "Endpoints/GetAccounts.h"
+#include "HyperPlayUtils.h"
+
+void OnResponse(FString Response, int32 StatusCode)
+{
+	const bool bWasSuccessful = HyperPlayUtils::StatusCodeIsSuccess(StatusCode);
+
+	UE_LOG(LogTemp, Display, TEXT("GetAccounts Success: %s"), bWasSuccessful ? "true" : "false");
+	UE_LOG(LogTemp, Display, TEXT("GetAccounts Response: %s"), *Response);
+}
+
+int main(){
+   FString chainMetadata("{\"chainId\":\"137\",\"chainMetadata\":{\"chainName\":\"Polygon\",\"nativeCurrency\":{\"name\":\"MATIC\",\"symbol\":\"MATIC\",\"decimals\":18},\"rpcUrls\":[\"https://polygon-rpc.com\"]}}");
+   UGetAccounts* GetAccountsInstance = UGetAccounts::GetAccounts(nullptr, 137, chainMetadata);
+   GetAccountsInstance->GetOnCompletedDelegate().AddRaw(this, &OnResponse);
+   GetAccountsInstance->Activate();
+}
+```
+
 {% endtab %}
 {% endtabs %}

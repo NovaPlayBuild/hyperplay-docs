@@ -8,6 +8,7 @@ Note that HyperPlay currently supports a single globally selected account during
 
 {% tabs %}
 {% tab title="curl" %}
+
 ```bash
 curl --location --request POST 'localhost:9680/rpc' \
 --header 'Content-Type: application/json' \
@@ -20,9 +21,11 @@ curl --location --request POST 'localhost:9680/rpc' \
    }
 }'
 ```
+
 {% endtab %}
 
 {% tab title="Unity" %}
+
 ```csharp
 using System.Collections;
 using UnityEngine;
@@ -52,6 +55,7 @@ public class GetAccounts: MonoBehaviour
 }
 
 ```
+
 {% endtab %}
 
 {% tab title="Unreal Blueprints" %}
@@ -77,6 +81,28 @@ End Object
 
 ```
 
+{% endtab %}
+
+{% tab title="Unreal Engine C++" %}
+
+```cpp
+#include "Endpoints/GetAccounts.h"
+#include "HyperPlayUtils.h"
+
+void OnResponse(FString Response, int32 StatusCode)
+{
+	const bool bWasSuccessful = HyperPlayUtils::StatusCodeIsSuccess(StatusCode);
+
+	UE_LOG(LogTemp, Display, TEXT("GetAccounts Success: %s"), bWasSuccessful ? "true" : "false");
+	UE_LOG(LogTemp, Display, TEXT("GetAccounts Response: %s"), *Response);
+}
+
+int main(){
+    UGetAccounts* GetAccountsInstance = UGetAccounts::GetAccounts(nullptr, 1, "");
+    GetAccountsInstance->GetOnCompletedDelegate().AddRaw(this, &OnResponse);
+    GetAccountsInstance->Activate();
+}
+```
 
 {% endtab %}
 {% endtabs %}
@@ -85,18 +111,28 @@ End Object
 
 {% tabs %}
 {% tab title="Response" %}
+
 ```json
 ["0x638105aa1b69406560f6428aeface3db9da83c64"]
 ```
+
+{% endtab %}
+{% tab title="Response Unreal Engine C++" %}
+
+```json
+FString("0x638105aa1b69406560f6428aeface3db9da83c64")
+```
+
 {% endtab %}
 
 {% tab title="Error" %}
 Errors will have an HTTP response status 500-599
 
 ```json
-{    
-    "message": "error description here"
+{
+  "message": "error description here"
 }
 ```
+
 {% endtab %}
 {% endtabs %}
