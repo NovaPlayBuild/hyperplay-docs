@@ -100,6 +100,29 @@ Then copy and paste the following into the Chain Metadata input pin
 ```
 
 {% endtab %}
+{% tab title="Unreal Engine C++" %}
+
+```cpp
+#include "Endpoints/GetAccounts.h"
+#include "HyperPlayUtils.h"
+
+void OnResponse(FString Response, int32 StatusCode)
+{
+	const bool bWasSuccessful = HyperPlayUtils::StatusCodeIsSuccess(StatusCode);
+
+	UE_LOG(LogTemp, Display, TEXT("GetAccounts Success: %s"), bWasSuccessful ? "true" : "false");
+	UE_LOG(LogTemp, Display, TEXT("GetAccounts Response: %s"), *Response);
+}
+
+int main(){
+   FString chainMetadata("{\"chainId\":\"137\",\"chainMetadata\":{\"chainName\":\"Polygon\",\"nativeCurrency\":{\"name\":\"MATIC\",\"symbol\":\"MATIC\",\"decimals\":18},\"rpcUrls\":[\"https://polygon-rpc.com\"]}}");
+   UGetAccounts* GetAccountsInstance = UGetAccounts::GetAccounts(nullptr, 137, chainMetadata);
+   GetAccountsInstance->GetOnCompletedDelegate().AddRaw(this, &OnResponse);
+   GetAccountsInstance->Activate();
+}
+```
+
+{% endtab %}
 {% endtabs %}
 
 ## Response
@@ -124,27 +147,4 @@ Errors will have an HTTP response status 500-599
 
 {% endtab %}
 
-{% tab title="Unreal Engine C++" %}
-
-```cpp
-#include "Endpoints/GetAccounts.h"
-#include "HyperPlayUtils.h"
-
-void OnResponse(FString Response, int32 StatusCode)
-{
-	const bool bWasSuccessful = HyperPlayUtils::StatusCodeIsSuccess(StatusCode);
-
-	UE_LOG(LogTemp, Display, TEXT("GetAccounts Success: %s"), bWasSuccessful ? "true" : "false");
-	UE_LOG(LogTemp, Display, TEXT("GetAccounts Response: %s"), *Response);
-}
-
-int main(){
-   FString chainMetadata("{\"chainId\":\"137\",\"chainMetadata\":{\"chainName\":\"Polygon\",\"nativeCurrency\":{\"name\":\"MATIC\",\"symbol\":\"MATIC\",\"decimals\":18},\"rpcUrls\":[\"https://polygon-rpc.com\"]}}");
-   UGetAccounts* GetAccountsInstance = UGetAccounts::GetAccounts(nullptr, 137, chainMetadata);
-   GetAccountsInstance->GetOnCompletedDelegate().AddRaw(this, &OnResponse);
-   GetAccountsInstance->Activate();
-}
-```
-
-{% endtab %}
 {% endtabs %}

@@ -68,32 +68,6 @@ public class SendTransaction: MonoBehaviour
 ```
 
 {% endtab %}
-{% endtabs %}
-
-## Response
-
-The transaction hash
-
-{% tabs %}
-{% tab title="Response" %}
-
-```
-0xa27e68e665f4bafe045dacdf2d0ace14617c02f20325d081e98dd5e3413ecece
-```
-
-{% endtab %}
-
-{% tab title="Error" %}
-Errors will have an HTTP response status 500-599
-
-```json
-{
-  "message": "error description here"
-}
-```
-
-{% endtab %}
-
 {% tab title="Unreal Engine C++" %}
 
 ```cpp
@@ -120,4 +94,30 @@ int main(){
 ```
 
 {% endtab %}
+{% endtabs %}
+
+## Response
+
+The transaction hash
+
+{% tabs %}
+{% tab title="Response" %}
+
+```
+0xa27e68e665f4bafe045dacdf2d0ace14617c02f20325d081e98dd5e3413ecece
+```
+
+{% endtab %}
+
+{% tab title="Error" %}
+Errors will have an HTTP response status 500-599
+
+```json
+{
+  "message": "error description here"
+}
+```
+
+{% endtab %}
+
 {% endtabs %}

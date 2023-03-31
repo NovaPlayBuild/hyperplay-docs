@@ -97,30 +97,6 @@ End Object
 ```
 
 {% endtab %}
-{% endtabs %}
-
-## Response
-
-{% tabs %}
-{% tab title="Response" %}
-
-```
-true
-```
-
-{% endtab %}
-
-{% tab title="Error" %}
-Errors will have an HTTP response status 500-599
-
-```json
-{
-  "message": "error description here"
-}
-```
-
-{% endtab %}
-
 {% tab title="Unreal Engine C++" %}
 
 ```cpp
@@ -147,4 +123,28 @@ int main(){
 ```
 
 {% endtab %}
+{% endtabs %}
+
+## Response
+
+{% tabs %}
+{% tab title="Response" %}
+
+```
+true
+```
+
+{% endtab %}
+
+{% tab title="Error" %}
+Errors will have an HTTP response status 500-599
+
+```json
+{
+  "message": "error description here"
+}
+```
+
+{% endtab %}
+
 {% endtabs %}
