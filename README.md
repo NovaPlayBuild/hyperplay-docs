@@ -23,6 +23,6 @@ The early access alpha client is now publicly available for download on [hyperpl
 
 Dive a little deeper and start exploring our API reference to connect wallet to game
 
-{% content-ref url="api/" %}
-[api](api/)
+{% content-ref url="developer-docs/api/" %}
+[api](developer-docs/api/)
 {% endcontent-ref %}

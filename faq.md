@@ -6,7 +6,7 @@ description: An overview of common questions about HyperPlay
 
 **Q: What is HyperPlay?**
 
-A: HyperPlay is both a web3-native game launcher, and an aggregator of game stores. HyperPlay allows players to install games from the Epic Store, GOG, or our own HyperPlay store. Players can connect their MetaMask or WalletConnect wallet to our native desktop application, and then use their wallet inside of every game launched from within HyperPlay, even in native desktop games. HyperPlay was initiated by **** [**Game7**](https://game7.io/), a DAO focused on accelerating the adoption of sustainable web3-native gaming.
+A: HyperPlay is both a web3-native game launcher, and an aggregator of game stores. HyperPlay allows players to install games from the Epic Store, GOG, or our own HyperPlay store. Players can connect their MetaMask or WalletConnect wallet to our native desktop application, and then use their wallet inside of every game launched from within HyperPlay, even in native desktop games. HyperPlay was initiated by [**Game7**](https://game7.io/), a DAO focused on accelerating the adoption of sustainable web3-native gaming.
 
 
 

@@ -2,7 +2,7 @@
 
 ## Install Desktop Client
 
-HyperPlay will be made privately available to select game devs during our public alpha. Sign up for early access on our website at [https://www.hyperplaygaming.com/](https://www.hyperplaygaming.com/)&#x20;
+{% embed url="https://www.hyperplay.xyz/downloads" %}
 
 ## Connect Wallet
 
@@ -10,9 +10,9 @@ HyperPlay will be made privately available to select game devs during our public
 Prerequisites: MetaMask Mobile [https://metamask.io/download/](https://metamask.io/download/)
 {% endhint %}
 
-Select MetaMask Mobile, WalletConnect or Create new wallet. In the future, an overlaid MetaMask Extension option will be available.
+Select MetaMask Mobile, MetaMask Extension, WalletConnect, or Create a new wallet.&#x20;
 
-<figure><img src=".gitbook/assets/Hyperplay Welcome.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Screenshot 2023-04-20 at 8.58.58 AM.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/HyperPlay QR.png" alt=""><figcaption></figcaption></figure>
 
