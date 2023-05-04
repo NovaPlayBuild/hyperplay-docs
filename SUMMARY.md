@@ -19,6 +19,7 @@
       * [Add Token](developer-docs/api/rpc-endpoint/rpc-call-examples/add-token.md)
   * [Send Contract Endpoint](developer-docs/api/send-contract-endpoint/README.md)
     * [ERC20 Transfer Example](developer-docs/api/send-contract-endpoint/erc20-transfer-example.md)
+    * [Function with Struct Param](developer-docs/api/send-contract-endpoint/erc20-transfer-example-1.md)
   * [Call Contract Endpoint](developer-docs/api/call-contract-endpoint/README.md)
     * [Call Contract Example](developer-docs/api/call-contract-endpoint/call-contract-example.md)
 * [Publishing With HyperPlay](developer-docs/publishing-with-hyperplay/README.md)
