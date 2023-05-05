@@ -27,6 +27,7 @@
   * [Building with HyperPlay](developer-docs/publishing-with-hyperplay/building-with-hyperplay.md)
   * [Publishing Your Game](developer-docs/publishing-with-hyperplay/publishing-your-game.md)
   * [Developer Portal](developer-docs/publishing-with-hyperplay/developer-portal.md)
+  * [HyperPlay Store Badges](developer-docs/publishing-with-hyperplay/hyperplay-store-badges.md)
   * [Feedback & Developer Support](developer-docs/publishing-with-hyperplay/feedback-and-developer-support.md)
 * [Design Considerations](developer-docs/design-considerations/README.md)
   * [Unreal Engine Integration](developer-docs/design-considerations/unreal-engine-integration.md)
