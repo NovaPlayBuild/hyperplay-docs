@@ -34,6 +34,40 @@ curl --location --request POST "localhost:9680/callContract" \
 ```
 {% endtab %}
 
+{% tab title="Unity" %}
+```csharp
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Networking;
+
+public class CallContract : MonoBehaviour
+{
+    void Start()
+    {
+        StartCoroutine(Call()); 
+    }
+
+    private IEnumerator Call()
+    {
+        string jsonString = "{ \"contractAddress\": \"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\", \"functionName\": \"totalSupply\", \"params\": \"\", \"abi\": [ { \"inputs\": [], \"name\": \"totalSupply\", \"outputs\": [ { \"internalType\": \"uint256\", \"name\": \"\", \"type\": \"uint256\" } ], \"stateMutability\": \"view\", \"type\": \"function\" } ], \"chain\": { \"chainId\": \"1\", \"chainMetadata\": { \"chainName\": \"Ethereum\", \"nativeCurrency\": { \"name\": \"ETH\", \"symbol\": \"ETH\", \"decimals\": 18 }, \"rpcUrls\": [\"https://rpc.ankr.com/eth\"] } } }";
+        byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(jsonString);
+
+        UnityWebRequest request = new UnityWebRequest("localhost:9680/callContract", "POST");
+        request.uploadHandler = new UploadHandlerRaw(jsonBytes);
+        request.downloadHandler = new DownloadHandlerBuffer();
+        request.SetRequestHeader("Content-Type", "application/json");
+
+        yield return request.SendWebRequest();
+        Debug.Log(request.error);
+        string totalSupply = request.downloadHandler.text;
+        Debug.Log(totalSupply);
+    }
+}
+
+```
+{% endtab %}
+
 {% tab title="Unreal Engine C++" %}
 ```cpp
 #include "HyperPlayUtils.h"
