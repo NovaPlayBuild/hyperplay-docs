@@ -5,8 +5,36 @@
 This request reads the name of a contract.
 
 {% tabs %}
-{% tab title="Unreal Engine C++" %}
+{% tab title="curl" %}
+```bash
+curl --location --request POST "localhost:9680/callContract" \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "contractAddress": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "functionName": "totalSupply",
+    "params": "",
+    "abi": [
+      {
+        "inputs": [],
+        "name": "totalSupply",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ],
+    "chain": { "chainId": "1", "chainMetadata": { "chainName": "Ethereum", "nativeCurrency": { "name": "ETH", "symbol": "ETH", "decimals": 18 }, "rpcUrls": ["https://rpc.ankr.com/eth"] } }
+}'
 
+```
+{% endtab %}
+
+{% tab title="Unreal Engine C++" %}
 ```cpp
 #include "HyperPlayUtils.h"
 #include "Endpoints/SendContract.h"
@@ -32,7 +60,6 @@ int main(){
   GetAccountsInstance->Activate();
 }
 ```
-
 {% endtab %}
 {% endtabs %}
 
@@ -42,11 +69,9 @@ The contract name
 
 {% tabs %}
 {% tab title="Response" %}
-
 ```
 "FaucetToken"
 ```
-
 {% endtab %}
 
 {% tab title="Error" %}
@@ -57,6 +82,5 @@ Errors will have an HTTP response status 500-599
   "message": "error description here"
 }
 ```
-
 {% endtab %}
 {% endtabs %}
