@@ -6,7 +6,6 @@ This request sends ERC-20 tokens.
 
 {% tabs %}
 {% tab title="curl" %}
-
 ```bash
 curl --location --request POST "localhost:9680/sendContract" \
 --header 'Content-Type: application/json' \
@@ -21,11 +20,9 @@ curl --location --request POST "localhost:9680/sendContract" \
     }
 }'
 ```
-
 {% endtab %}
 
 {% tab title="Unity" %}
-
 ```csharp
 using System.Collections;
 using UnityEngine;
@@ -43,7 +40,7 @@ public class SendContract: MonoBehaviour
         string jsonString = "{ \"contractAddress\": \"0x8a9f58dea0cf3d92dd8963f5a0a4c7aa9fa76642\", \"functionName\": \"transfer\", \"params\": [\"0x638105AA1B69406560f6428aEFACe3DB9da83c64\", \"1230000000000000000\"], \"abi\": [{ \"inputs\": [ { \"internalType\": \"address\", \"name\": \"to\", \"type\": \"address\" }, { \"internalType\": \"uint256\", \"name\": \"amount\", \"type\": \"uint256\" } ], \"name\": \"transfer\", \"outputs\": [{ \"internalType\": \"bool\", \"name\": \"\", \"type\": \"bool\" }], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }], \"valueInWei\": \"0\", \"chain\": { \"chainId\": \"5\" } }";
         byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(jsonString);
 
-        UnityWebRequest request = new UnityWebRequest("localhost:9680/rpc", "POST");
+        UnityWebRequest request = new UnityWebRequest("localhost:9680/sendContract", "POST");
         request.uploadHandler = new UploadHandlerRaw(jsonBytes);
         request.downloadHandler = new DownloadHandlerBuffer();
         request.SetRequestHeader("Content-Type", "application/json");
@@ -56,7 +53,6 @@ public class SendContract: MonoBehaviour
 }
 
 ```
-
 {% endtab %}
 
 {% tab title="Unreal Blueprints" %}
@@ -95,11 +91,9 @@ Begin Object Class=/Script/BlueprintGraph.K2Node_MakeArray Name="K2Node_MakeArra
 End Object
 
 ```
-
 {% endtab %}
 
 {% tab title="Unreal Engine C++" %}
-
 ```cpp
 #include "HyperPlayUtils.h"
 #include "Endpoints/SendContract.h"
@@ -130,7 +124,6 @@ int main(){
     SendContractInstance->Activate();
 }
 ```
-
 {% endtab %}
 {% endtabs %}
 
@@ -140,11 +133,9 @@ The transaction hash
 
 {% tabs %}
 {% tab title="Response" %}
-
 ```
 0x1b8368d5b67a914a49c76984776849ee3c56a4ac28c92d98103ef18e7215ae2b
 ```
-
 {% endtab %}
 
 {% tab title="Error" %}
@@ -155,6 +146,5 @@ Errors will have an HTTP response status 500-599
   "message": "error description here"
 }
 ```
-
 {% endtab %}
 {% endtabs %}
