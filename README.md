@@ -2,7 +2,7 @@
 description: A web3-native game launcher from the future.
 ---
 
-# HyperPlay
+# 🟣 HyperPlay
 
 ## Welcome to HyperPlay
 

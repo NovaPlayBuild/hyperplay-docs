@@ -2,7 +2,7 @@
 description: An overview of common questions about HyperPlay
 ---
 
-# FAQ
+# ❓ FAQ
 
 **Q: What is HyperPlay?**
 

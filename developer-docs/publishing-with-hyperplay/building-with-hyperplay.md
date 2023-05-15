@@ -1,4 +1,4 @@
-# Building with HyperPlay
+# ⚒ Building with HyperPlay
 
 **Review each tab below for valuable resources.**
 

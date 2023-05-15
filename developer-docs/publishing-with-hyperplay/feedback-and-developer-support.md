@@ -1,4 +1,4 @@
-# Feedback & Developer Support
+# 🆘 Feedback & Developer Support
 
 If you have any questions, require assistance, or would like to provide us with your feedback, please don't hesitate to reach out to us via our [Discord](https://discord.gg/hyperplay) server. We have designated channels specifically for game developers where you can ask questions, seek support and connect with fellow developers.
 

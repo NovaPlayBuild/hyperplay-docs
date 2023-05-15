@@ -1,4 +1,4 @@
-# API
+# 📱 API
 
 The HyperPlay API references many of the calls found in MetaMask's and geth's JSON RPC endpoints. The next sections will provide some examples.
 

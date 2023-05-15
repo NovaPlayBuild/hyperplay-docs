@@ -1,4 +1,4 @@
-# Install HyperPlay
+# ⬇ Install HyperPlay
 
 ## Install Desktop Client
 

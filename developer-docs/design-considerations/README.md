@@ -4,7 +4,7 @@ description: >-
   integrate HyperPlay
 ---
 
-# Design Considerations
+# ⌨ Design Considerations
 
 ## Security
 

@@ -1,4 +1,4 @@
-# Publishing Your Game
+# 📃 Publishing Your Game
 
 To get started with publishing your game on the HyperPlay Library, fill out the application form below with the required information. Our team will then carefully review your application and contact you directly to schedule a meeting to discuss the publishing process. Rest assured that we strive to make the process as straightforward as possible for you and are here to help every step of the way.
 

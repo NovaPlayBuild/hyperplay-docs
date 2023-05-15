@@ -1,4 +1,4 @@
-# HyperPlay Store Badges
+# 📛 HyperPlay Store Badges
 
 These badges are a great way to let your audience know your game is available on our platform.
 

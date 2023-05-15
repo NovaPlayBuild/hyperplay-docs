@@ -1,4 +1,4 @@
-# Current Alpha Build State
+# 🅰 Current Alpha Build State
 
 What features are available in the current alpha build of our platform? You can:
 
