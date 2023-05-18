@@ -12,8 +12,8 @@ description: This is a non-exhaustive list of /rpc endpoint functionality.
 [get-balance.md](get-balance.md)
 {% endcontent-ref %}
 
-{% content-ref url="personal-sign.md" %}
-[personal-sign.md](personal-sign.md)
+{% content-ref url="personal-sign/" %}
+[personal-sign](personal-sign/)
 {% endcontent-ref %}
 
 {% content-ref url="sign-typed-data-v3.md" %}
