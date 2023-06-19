@@ -1,8 +1,8 @@
-# rpcRaw
+# RPC Raw
 
 ## Request
 
-Hyperplay’s API includes `chainId` in the request body for better UX and security.
+HyperPlay’s API includes `chainId` in the request body for better UX and security.
 
 rpcRaw
 
