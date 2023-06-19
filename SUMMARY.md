@@ -18,6 +18,7 @@
       * [Send Transaction](developer-docs/api/rpc-endpoint/rpc-call-examples/send-transaction.md)
       * [Add or Switch Network](developer-docs/api/rpc-endpoint/rpc-call-examples/add-or-switch-network.md)
       * [Add Token](developer-docs/api/rpc-endpoint/rpc-call-examples/add-token.md)
+      * [rpcRaw](developer-docs/api/rpc-endpoint/rpc-call-examples/add-token-1.md)
   * [Send Contract Endpoint](developer-docs/api/send-contract-endpoint/README.md)
     * [ERC20 Transfer Example](developer-docs/api/send-contract-endpoint/erc20-transfer-example.md)
     * [Function with Struct Param](developer-docs/api/send-contract-endpoint/erc20-transfer-example-1.md)
