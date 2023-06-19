@@ -1,8 +1,8 @@
 # Sign Typed Data v3
 
-This method follows EIP-712 [https://eips.ethereum.org/EIPS/eip-712](https://eips.ethereum.org/EIPS/eip-712)
+## Request
 
-## Example: Sign Typed Data v3&#x20;
+This method follows EIP-712 [https://eips.ethereum.org/EIPS/eip-712](https://eips.ethereum.org/EIPS/eip-712)
 
 Ask the user to sign typed data
 
@@ -10,7 +10,6 @@ Learn more: [https://docs.metamask.io/guide/signing-data.html#sign-typed-data-v3
 
 {% tabs %}
 {% tab title="curl" %}
-
 ```bash
 curl --location --request POST 'localhost:9680/rpc' \
 --header 'Content-Type: application/json' \
@@ -28,11 +27,9 @@ curl --location --request POST 'localhost:9680/rpc' \
 }
 '
 ```
-
 {% endtab %}
 
 {% tab title="Unity" %}
-
 ```csharp
 using System.Collections;
 using UnityEngine;
@@ -62,11 +59,9 @@ public class SignTypedDataV3 : MonoBehaviour
     }
 }
 ```
-
 {% endtab %}
 
 {% tab title="Unreal Blueprints" %}
-
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_AsyncAction Name="K2Node_AsyncAction_2"
    ProxyFactoryFunctionName="RpcCall"
@@ -199,10 +194,9 @@ Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallF
 End Object
 
 ```
-
 {% endtab %}
-{% tab title="Unreal Engine C++" %}
 
+{% tab title="Unreal Engine C++" %}
 ```cpp
 #include "HyperPlayUtils.h"
 #include "Endpoints/RpcCall.h"
@@ -240,6 +234,5 @@ int main(){
    GetAccountsInstance->Activate();
 }
 ```
-
 {% endtab %}
 {% endtabs %}

@@ -1,6 +1,6 @@
 # Get Accounts
 
-## Example: Get Accounts&#x20;
+## Request
 
 Get the user's currently selected address
 
@@ -8,7 +8,6 @@ Note that HyperPlay currently supports a single globally selected account during
 
 {% tabs %}
 {% tab title="curl" %}
-
 ```bash
 curl --location --request POST 'localhost:9680/rpc' \
 --header 'Content-Type: application/json' \
@@ -21,11 +20,9 @@ curl --location --request POST 'localhost:9680/rpc' \
    }
 }'
 ```
-
 {% endtab %}
 
 {% tab title="Unity" %}
-
 ```csharp
 using System.Collections;
 using UnityEngine;
@@ -55,7 +52,6 @@ public class GetAccounts: MonoBehaviour
 }
 
 ```
-
 {% endtab %}
 
 {% tab title="Unreal Blueprints" %}
@@ -80,11 +76,9 @@ Begin Object Class=/Script/BlueprintGraph.K2Node_AsyncAction Name="K2Node_AsyncA
 End Object
 
 ```
-
 {% endtab %}
 
 {% tab title="Unreal Engine C++" %}
-
 ```cpp
 #include "Endpoints/GetAccounts.h"
 #include "HyperPlayUtils.h"
@@ -103,7 +97,6 @@ int main(){
     GetAccountsInstance->Activate();
 }
 ```
-
 {% endtab %}
 {% endtabs %}
 
@@ -111,18 +104,15 @@ int main(){
 
 {% tabs %}
 {% tab title="Response" %}
-
 ```json
 ["0x638105aa1b69406560f6428aeface3db9da83c64"]
 ```
-
 {% endtab %}
-{% tab title="Response Unreal Engine C++" %}
 
+{% tab title="Response Unreal Engine C++" %}
 ```json
 FString("0x638105aa1b69406560f6428aeface3db9da83c64")
 ```
-
 {% endtab %}
 
 {% tab title="Error" %}
@@ -133,6 +123,5 @@ Errors will have an HTTP response status 500-599
   "message": "error description here"
 }
 ```
-
 {% endtab %}
 {% endtabs %}

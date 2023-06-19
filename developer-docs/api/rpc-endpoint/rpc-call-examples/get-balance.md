@@ -1,15 +1,16 @@
 # Get Balance
 
-## Example: Get Balance
+## Request
+
+Returns the balance of given account address in the smallest unit.
 
 There are two params
 
-- Address of wallet
-- `latest` which gets the latest balance
+* Address of wallet
+* `latest` which gets the latest balance
 
 {% tabs %}
 {% tab title="curl" %}
-
 ```bash
 curl --location --request POST "localhost:9680/rpc" \
 --header "Content-Type: application/json" \
@@ -23,11 +24,9 @@ curl --location --request POST "localhost:9680/rpc" \
    }
 }'
 ```
-
 {% endtab %}
 
 {% tab title="Unity" %}
-
 ```csharp
 using System.Collections;
 using UnityEngine;
@@ -57,11 +56,9 @@ public class GetBalance: MonoBehaviour
 }
 
 ```
-
 {% endtab %}
 
 {% tab title="Unreal Blueprints" %}
-
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_AsyncAction Name="K2Node_AsyncAction_1"
    ProxyFactoryFunctionName="RpcCall"
@@ -191,11 +188,9 @@ Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallF
 End Object
 
 ```
-
 {% endtab %}
 
 {% tab title="Unreal Engine C++" %}
-
 ```cpp
 #include "HyperPlayUtils.h"
 #include "Endpoints/RpcCall.h"
@@ -218,7 +213,6 @@ int main(){
 	RpcCallInstance->Activate();
 }
 ```
-
 {% endtab %}
 {% endtabs %}
 
@@ -232,11 +226,9 @@ Base10 `9968499999832000 wei` to ETH is `0.009968499999832 ETH`
 
 {% tabs %}
 {% tab title="Resonse" %}
-
 ```
 0x236a4c456ef7c0
 ```
-
 {% endtab %}
 
 {% tab title="Error" %}
@@ -247,6 +239,5 @@ Errors will have an HTTP response status 500-599
   "message": "error description here"
 }
 ```
-
 {% endtab %}
 {% endtabs %}
