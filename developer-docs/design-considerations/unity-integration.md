@@ -1,5 +1,5 @@
 ---
-description: Suggestions for how to integrate HyperPlay with your Unreal Engine Project
+description: Suggestions for how to integrate HyperPlay with your Unity Project
 ---
 
 # Unity Integration
