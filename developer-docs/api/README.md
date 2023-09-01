@@ -20,4 +20,4 @@ The HyperPlay API references many of the calls found in MetaMask's and geth's JS
 
 ## Quick Start
 
-{% embed url="https://youtu.be/LTH77Oc9l4s" %}
+{% embed url="https://youtu.be/1bHcDdRkgtE" %}
