@@ -1,19 +1,23 @@
 # 📱 API
 
+## Overview
+
+HyperPlay is a web3-native game launcher with wallet integration. The launcher acts as a proxy between the desktop game and wallet. Any game on HyperPlay can trigger a wallet interaction with a simple HTTP request.
+
+* Game triggers a HTTP request
+* HyperPlay launcher receives the request and forwards it to the player's wallet
+* If the player connected via MetaMask Mobile or WalletConnect, there will be a mobile popup
+* If the player connected via MetaMask Extension, there will be an in game overlay
+* The player can decide to approve or reject the transaction
+
+## All JSON RPC Endpoints
+
 The HyperPlay API references many of the calls found in MetaMask's and geth's JSON RPC endpoints. The next sections will provide some examples.
 
 {% embed url="https://metamask.github.io/api-playground/api-documentation" %}
 
 {% embed url="https://ethereumbuilders.gitbooks.io/guide/content/en/ethereum_json_rpc.html" %}
 
-## Interact with CURL
-
-The API will be embedded inside the desktop game such as Unity or UE4. Below is an example using `curl` command. For more details in the next sections.
+## Quick Start
 
 {% embed url="https://youtu.be/LTH77Oc9l4s" %}
-
-## Example for a Unity Project
-
-The following video shows an example of how to interact with the user's wallet through HyperPlay from a Unity project, but note that HyperPlay is game engine agnostic, and any game engine should work.
-
-{% embed url="https://youtu.be/Q7djPzf4uck" %}
