@@ -10,6 +10,8 @@ HyperPlay is a web3-native game launcher with wallet integration. The launcher a
 * If the player connected via MetaMask Extension, there will be an in game overlay
 * The player can decide to approve or reject the transaction
 
+<figure><img src="../../.gitbook/assets/overlay.png" alt=""><figcaption></figcaption></figure>
+
 ## All JSON RPC Endpoints
 
 The HyperPlay API references many of the calls found in MetaMask's and geth's JSON RPC endpoints. The next sections will provide some examples.
