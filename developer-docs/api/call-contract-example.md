@@ -1,5 +1,7 @@
 # Call Contract Example
 
+{% embed url="https://youtu.be/jXAaIAA2tz4" %}
+
 ## Parameters
 
 * `contractAddress` - `string` Contract address to interact with
@@ -70,7 +72,7 @@ public class CallContract : MonoBehaviour
 
     private IEnumerator Call()
     {
-        string jsonString = "{ \"contractAddress\": \"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\", \"functionName\": \"totalSupply\", \"params\": \"\", \"abi\": [ { \"inputs\": [], \"name\": \"totalSupply\", \"outputs\": [ { \"internalType\": \"uint256\", \"name\": \"\", \"type\": \"uint256\" } ], \"stateMutability\": \"view\", \"type\": \"function\" } ], \"chain\": { \"chainId\": \"1\", \"chainMetadata\": { \"chainName\": \"Ethereum\", \"nativeCurrency\": { \"name\": \"ETH\", \"symbol\": \"ETH\", \"decimals\": 18 }, \"rpcUrls\": [\"https://rpc.ankr.com/eth\"] } } }";
+        string jsonString = "{ \"contractAddress\": \"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\", \"functionName\": \"totalSupply\", \"params\": [], \"abi\": [ { \"inputs\": [], \"name\": \"totalSupply\", \"outputs\": [ { \"internalType\": \"uint256\", \"name\": \"\", \"type\": \"uint256\" } ], \"stateMutability\": \"view\", \"type\": \"function\" } ], \"chain\": { \"chainId\": \"1\", \"chainMetadata\": { \"chainName\": \"Ethereum\", \"nativeCurrency\": { \"name\": \"ETH\", \"symbol\": \"ETH\", \"decimals\": 18 }, \"rpcUrls\": [\"https://rpc.ankr.com/eth\"] } } }";
         byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(jsonString);
 
         UnityWebRequest request = new UnityWebRequest("localhost:9680/callContract", "POST");
