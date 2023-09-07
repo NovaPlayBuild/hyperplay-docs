@@ -32,7 +32,7 @@ curl --location --request POST "localhost:9680/callContract" \
 --data-raw '{
     "contractAddress": "0xdac17f958d2ee523a2206206994597c13d831ec7",
     "functionName": "totalSupply",
-    "params": "",
+    "params": [],
     "abi": [
       {
         "inputs": [],
