@@ -30,13 +30,13 @@ This request sends ERC-20 tokens.
 curl --location --request POST "localhost:9680/sendContract" \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "contractAddress": "0x8a9f58dea0cf3d92dd8963f5a0a4c7aa9fa76642",
+    "contractAddress": "0xc657c7ca0f06b9c241a080AC0d6625923Ef9f1aF",
     "functionName": "transfer",
-    "params": ["0x638105AA1B69406560f6428aEFACe3DB9da83c64", "1230000000000000000"],
+    "params": ["0x638105AA1B69406560f6428aEFACe3DB9da83c64", "1000000000000000000"],
     "abi": [{ "inputs": [ { "internalType": "address", "name": "to", "type": "address" }, { "internalType": "uint256", "name": "amount", "type": "uint256" } ], "name": "transfer", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "nonpayable", "type": "function" }],
     "valueInWei": "0",
     "chain": {
-        "chainId": "1"
+        "chainId": "11155111"
     }
 }'
 ```
