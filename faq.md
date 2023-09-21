@@ -68,7 +68,7 @@ A: All EVM networks are supported, including Ethereum, zkSync, Polygon, Mantle, 
 
 **Q: What operating systems are supported?**
 
-A: HyperPlay supports Windows, SteamDeck, MacOS, and Linux. We are integrated with Wine-Crossover, improving game compatibility on Mac. For SteamDeck and Linux players, HyperPlay integrate with the [Proton compatibility library](https://www.protondb.com/), allowing Windows games to run natively. Note that some operating systems such as OSX might have issues with the HyperPlay overlay.
+A: HyperPlay supports Windows, SteamDeck, MacOS, and Linux. We are integrated with Wine-Crossover, improving game compatibility on Mac. For SteamDeck and Linux players, HyperPlay integrate with the [Proton compatibility library](https://www.protondb.com/), allowing Windows games to run natively.
 
 
 
@@ -97,6 +97,6 @@ A: We are not monetized at this time. We plan to introduce optional monetized fe
 
 **Q: Are there any known issues with the HyperPlay client?**
 
-A: We're an early access alpha, so lots of things are still pretty buggy. In particular, our MacOS build is still heavily under construction. The wallet overlay will appear in browser based games on MacOS, but we don't yet support native games on MacOS. Other than that, there are lots of UI things and forms of polish we're still implementing. Expect a beautiful UI refresh in the very near future with a much sexier UI.
+A: We're an early access alpha, so lots of things are still pretty buggy. In particular, our MacOS build is still heavily under construction. The wallet overlay might not work on all MacOS games. Other than that, there are lots of UI things and forms of polish we're still implementing. Expect a beautiful UI refresh in the very near future with a much sexier UI.
 
 \
