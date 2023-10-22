@@ -17,12 +17,12 @@ A: Not at this time, but we’ll see.\
 
 **Q: Is HyperPlay open source?**&#x20;
 
-A: Yes. HyperPlay is open source, mainly under a GPL license. A small number of our libraries like the HyperPlay overlay are issued under a BSL license, a kind of open source license where each version of the software starts as proprietary and then switches to GPL 24 months later. Our BSL code is publicly inspectable.\
+A: Yes. HyperPlay is open source, mainly under a GPL license. A small number of our libraries like the HyperPlay developer portal and the wallet overlay are issued under a proprietary license, although we are working to progressively be more open source over time.\
 
 
 **Q: How do games get included in HyperPlay?**
 
-A: HyperPlay is an aggregator of game stores, so the answer varies per store. Developers seeking to list in the HyperPlay store should get in contact with us through [**this form**](https://forms.gle/A3mQ8A7CTWrDo8LD6). Games listed through the Epic Games Store or GOG will automatically become available to players inside of HyperPlay. We recommend reaching out to those stores directly.
+A: HyperPlay is an aggregator of game stores, so the answer varies per store. Developers seeking to list in the HyperPlay Store should get in contact with us through [**this form**](https://forms.gle/A3mQ8A7CTWrDo8LD6). Games listed through the Epic Games Store or GOG will automatically become available to players inside of HyperPlay. We recommend reaching out to those stores directly.
 
 
 
@@ -34,13 +34,13 @@ A: HyperPlay takes no cut from game purchases or in-game transactions. For devel
 
 **Q: Are both native games and browser games supported?**
 
-A: Yes, both are supported! For browser games, we work some UX magic to give these a better user experience than playing a in traditional browser.
+A: Yes, both are supported! For browser games, we work some UX magic to give these a better user experience than playing a in traditional browser. We also provide graphics card acceleration of browser based games through WebGPU.
 
 
 
 **Q: Which wallets are supported?**
 
-A: Players can use MetaMask Mobile, the MetaMask browser extension, or any WalletConnect based wallet. MetaMask Mobile and WalletConnect are connected by scanning a simple QR code, and the MetaMask browser extension can even be imported from your existing browser install.
+A: Players can use MetaMask Mobile, the MetaMask browser extension, or any WalletConnect based wallet like Sequence, TrustWallet, or others. MetaMask Mobile and WalletConnect are connected by scanning a simple QR code, and the MetaMask browser extension can even be imported from your existing browser install.
 
 
 
@@ -49,10 +49,14 @@ A: Players can use MetaMask Mobile, the MetaMask browser extension, or any Walle
 A: There are four critical components to HyperPlay’s security strategy. \
 
 
-1. **Store review:** all stores included in our app (HyperPlay, Epic, GOG) do extensive malware testing and diligence on the development teams for any software submitted through our store.
+1. **Store review:** all stores included in our app (HyperPlay, Epic, GOG) do extensive malware testing and diligence on the development teams for any software submitted through our store, including both static analysis and dynamic analysis. We never allow any title to be published without security review.
 2. **Game sandboxes:** Because it is impossible to ensure that no malware will ever slip through a store review process, we’re introducing game sandboxes that prevent a malicious game that slipped through a store review process from acting outside of its own context. We aim to launch this feature soon.
 3. **Key segregation:** HyperPlay never exposes a user’s keys to games. The wallet lives within our desktop application or on an external mobile device. Games can submit transaction requests to HyperPlay, which we show to the user. The game cannot access the user’s keys or sign on behalf of the user without user consent.
-4. **External signer:** It isn’t a coincidence that we support MetaMask Mobile and WalletConnect. Keeping the keys off of one’s device, and having transactions pop up on an external mobile device is an inherently more secure pattern. For security conscious users, we strongly recommend the MetaMask Mobile integration as the most secure connection method. Even in the event that a user's computer becomes compromised, this pattern should keep the malware from being able to access the keys.\
+4. **External signer:** It isn’t a coincidence that we support MetaMask Mobile and WalletConnect. Keeping the keys off of one’s device, and having transactions pop up on an external mobile device is an inherently more secure pattern. For security conscious users, we strongly recommend the MetaMask Mobile integration as the most secure connection method. Even in the event that a user's computer becomes compromised, this pattern should keep the malware from being able to access the keys.
+
+A word of warning here: other "web3 game launchers" have often marketed themselves as a safer solution to download games. At the time of writing, we are aware of extremely alarming poor security practices in some of these products. We urge those teams to look to our example and take user safety and protection of user funds more seriously.
+
+\
 
 
 **Q: What is the process of bringing an existing MetaMask wallet to HyperPlay?**
@@ -63,7 +67,7 @@ A: For MetaMask Mobile or WalletConnect users, players will scan a QR code withi
 
 **Q: Which networks are supported?**
 
-A: All EVM networks are supported, including Ethereum, zkSync, Polygon, Mantle, Avalanche, Arbitrum, Optimism, BSC, and Harmony. Non-EVM networks like Solana and Cosmos will be supported in the future through MetaMask’s Snaps plugin system, but will require the user to use a MetaMask wallet for compatibility. It wouldn’t be sustainable for HyperPlay to maintain integrations with each additional chain protocol.\
+A: All EVM networks are supported, including Ethereum, zkSync, Polygon, Mantle, Avalanche, Arbitrum, Optimism, BSC, and Harmony. Non-EVM networks like Sui, Starkware, Solana and Cosmos are supported through MetaMask’s Snaps plugin system, but will require the user to use a MetaMask browser extension wallet for compatibility.\
 
 
 **Q: What operating systems are supported?**
@@ -94,9 +98,5 @@ A: We solve many developer experience problems (ie. the wallet-to-game interacti
 A: We are not monetized at this time. We plan to introduce optional monetized features at a later date.
 
 
-
-**Q: Are there any known issues with the HyperPlay client?**
-
-A: We're an early access alpha, so lots of things are still pretty buggy. In particular, our MacOS build is still heavily under construction. The wallet overlay might not work on all MacOS games. Other than that, there are lots of UI things and forms of polish we're still implementing. Expect a beautiful UI refresh in the very near future with a much sexier UI.
 
 \
