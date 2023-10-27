@@ -7,7 +7,7 @@
 
 ## Developer Docs
 
-* [📱 API for Native Games](developer-docs/api/README.md)
+* [🕹 API for Native Games](developer-docs/api/README.md)
   * [Get Accounts](developer-docs/api/get-accounts.md)
   * [Get Balance](developer-docs/api/get-balance.md)
   * [Call Contract Example](developer-docs/api/call-contract-example.md)
