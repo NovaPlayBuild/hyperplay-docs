@@ -80,7 +80,7 @@ Navigate to the **"Create a Game"** Tab at the top of this page to continue.&#x2
 {% tab title="Creating a new Game" %}
 Here, you can provide more information about your game by filling out the following metadata fields:
 
-* Game Cover (**3:4 ratio or 768x1024px**)
+* Game Cover (**16:9 ratio or 1920x1080px**)
 * Display Name
 * Website
 * Type
