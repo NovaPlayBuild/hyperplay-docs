@@ -6,7 +6,7 @@ description: An overview of common questions about HyperPlay
 
 **Q: What is HyperPlay?**
 
-A: HyperPlay is both a web3-native game launcher, and an aggregator of game stores. HyperPlay allows players to install games from the Epic Store, GOG, or our own HyperPlay store. Players can connect their MetaMask or WalletConnect wallet to our native desktop application, and then use their wallet inside of every game launched from within HyperPlay, even in native desktop games. HyperPlay was initiated by [**Game7**](https://game7.io/), a DAO focused on accelerating the adoption of sustainable web3-native gaming.
+A: HyperPlay is a desktop application that provides both a web3-native game launcher and an aggregator of game stores. HyperPlay allows players to install games from the Epic Store, GOG, or our own HyperPlay store. Players can connect their MetaMask or WalletConnect wallet to our native desktop application, and then use their wallet inside of every game launched from within HyperPlay, even in native desktop games. HyperPlay was developed in partnership with [**MetaMask**](https://metamask.io) and was incubated by [**Game7**](https://game7.io/), a DAO focused on accelerating the adoption of sustainable web3-native gaming. In June of 2023, we closed a capital raise and became an independent company.
 
 
 
@@ -17,12 +17,12 @@ A: Not at this time, but we’ll see.\
 
 **Q: Is HyperPlay open source?**&#x20;
 
-A: Yes. HyperPlay is open source, mainly under a GPL license. A small number of our libraries like the HyperPlay developer portal and the wallet overlay are issued under a proprietary license, although we are working to progressively be more open source over time.\
+A: Yes. HyperPlay is open source, mainly under a GPL license. A small number of our products like the HyperPlay developer portal and the wallet overlay are issued under a proprietary license, although we are working to progressively be more open source over time.\
 
 
 **Q: How do games get included in HyperPlay?**
 
-A: HyperPlay is an aggregator of game stores, so the answer varies per store. Developers seeking to list in the HyperPlay Store should get in contact with us through [**this form**](https://forms.gle/A3mQ8A7CTWrDo8LD6). Games listed through the Epic Games Store or GOG will automatically become available to players inside of HyperPlay. We recommend reaching out to those stores directly.
+A: HyperPlay is an aggregator of game stores, so the answer varies per store. Developers seeking to list in the HyperPlay Store should get in contact with us through [**this form**](https://forms.gle/A3mQ8A7CTWrDo8LD6). Once your application is processed, we'll schedule an onboarding call and grant you access to the HyperPlay developer portal where you can manage your game builds. Games listed through the Epic Games Store or GOG will automatically become available to players inside of HyperPlay. We recommend reaching out to those stores directly.
 
 
 
@@ -67,7 +67,7 @@ A: For MetaMask Mobile or WalletConnect users, players will scan a QR code withi
 
 **Q: Which networks are supported?**
 
-A: All EVM networks are supported, including Ethereum, zkSync, Polygon, Mantle, Avalanche, Arbitrum, Optimism, BSC, and Harmony. Non-EVM networks like Sui, Starkware, Solana and Cosmos are supported through MetaMask’s Snaps plugin system, but will require the user to use a MetaMask browser extension wallet for compatibility.\
+A: All EVM networks are supported, including Ethereum, zkSync, Polygon, Mantle, Linea, Avalanche, Arbitrum, Optimism, BSC, and Harmony. Non-EVM networks like Sui, Starkware, Solana and Cosmos are supported through MetaMask’s Snaps plugin system, but will require the user to use a MetaMask browser extension wallet for compatibility.\
 
 
 **Q: What operating systems are supported?**
@@ -95,7 +95,7 @@ A: We solve many developer experience problems (ie. the wallet-to-game interacti
 
 **Q: How does HyperPlay make money?**
 
-A: We are not monetized at this time. We plan to introduce optional monetized features at a later date.
+A: We are not monetized at this time. We plan to introduce optional monetized features to our users at a later date.
 
 
 
