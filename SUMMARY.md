@@ -7,7 +7,7 @@
 
 ## Developer Docs
 
-* [🕹 API for Native Games](developer-docs/api/README.md)
+* [🕹 API for Native Games (EVM)](developer-docs/api/README.md)
   * [Get Accounts](developer-docs/api/get-accounts.md)
   * [Get Balance](developer-docs/api/get-balance.md)
   * [Call Contract Example](developer-docs/api/call-contract-example.md)
@@ -26,6 +26,15 @@
     * [Send Transaction](developer-docs/api/sui-blockchain/send-transaction.md)
     * [Send Contract](developer-docs/api/sui-blockchain/send-contract.md)
     * [Personal Sign](developer-docs/api/sui-blockchain/personal-sign.md)
+* [🎱 API for Native Games (Non-EVM)](developer-docs/api-1/README.md)
+  * [Sui Blockchain](developer-docs/api-1/sui-blockchain/README.md)
+    * [Get Accounts](developer-docs/api-1/sui-blockchain/get-accounts.md)
+    * [Get Balance](developer-docs/api-1/sui-blockchain/get-balance.md)
+    * [Get Object](developer-docs/api-1/sui-blockchain/get-object.md)
+    * [Send Transaction](developer-docs/api-1/sui-blockchain/send-transaction.md)
+    * [Send Contract](developer-docs/api-1/sui-blockchain/send-contract.md)
+    * [Personal Sign](developer-docs/api-1/sui-blockchain/personal-sign.md)
+* [🌐 API for Browser Games (EVM)](developer-docs/api-for-browser-games-evm.md)
 * [📜 Publishing](developer-docs/publishing/README.md)
   * [🅰 Current Alpha Build State](developer-docs/publishing/current-alpha-build-state.md)
   * [⚒ Building with HyperPlay](developer-docs/publishing/building-with-hyperplay.md)
