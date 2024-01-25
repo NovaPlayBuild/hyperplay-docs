@@ -39,3 +39,5 @@
 * [⌨ Design Considerations](developer-docs/design-considerations/README.md)
   * [Unreal Engine Integration](developer-docs/design-considerations/unreal-engine-integration.md)
   * [Unity Integration](developer-docs/design-considerations/unity-integration.md)
+* [🏪 Store APIs](developer-docs/store-apis/README.md)
+  * [Listings by Popularity](developer-docs/store-apis/listings-by-popularity.md)
