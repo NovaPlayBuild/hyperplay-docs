@@ -10,11 +10,11 @@ This endpoint returns all games listed on HyperPlay, ordered by descending popul
 {% endswagger-description %}
 
 {% swagger-parameter in="query" name="verified" type="Boolean" %}
-Returns games that are compatible with the HyperPlay Overlay or MetaMask compatible marketplaces
+Returns games that are compatible with MetaMask in-game or MetaMask compatible marketplaces
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="overlayVerified" type="Boolean" %}
-Returns games that are compatible with the HyperPlay Overlay
+{% swagger-parameter in="query" name="metaMaskInGame" type="Boolean" %}
+Returns games that support MetaMask in-game
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="metaMaskMarketplace" type="Boolean" %}
@@ -158,11 +158,11 @@ Here is the TypeScript type for the response:
 
 #### Parameter combinations
 
-When setting `verified=true`, only games that have _**either**_ HyperPlay Overlay support, _**or**_ MetaMask compatible marketplaces will be returned. This parameter is not necessary if using `overlayVerified` or `metaMaskMarketplace` separately.
+When setting `verified=true`, only games that have _**either**_ in-game MetaMask support, _**or**_ MetaMask compatible marketplaces will be returned. This parameter is not necessary if using `metaMaskInGame` or `metaMaskMarketplace` separately.
 
 
 
-When setting `overlayVerified=true`, only games that have HyperPlay Overlay support will be returned. This can be combined with `metaMaskMarketplace=true` to further narrow results.
+When setting `metaMaskInGame=true`, only games that have in-game MetaMask support will be returned. This can be combined with `metaMaskMarketplace=true` to further narrow results.
 
 
 
@@ -170,4 +170,4 @@ When setting `metaMaskMarketplace=true`, only games that have MetaMask compatibl
 
 
 
-When combining `overlayVerified=true` with `metaMaskMarketplace=true`, only games that have _**both**_ HyperPlay Overlay support _**and**_ MetaMask compatible marketplaces will be returned. This is a more narrow set than just using `verified=true`.
+When combining `metaMaskInGame=true` with `metaMaskMarketplace=true`, only games that have _**both**_ in-game MetaMask support _**and**_ MetaMask compatible marketplaces will be returned. This is a more narrow set than just using `verified=true`.
