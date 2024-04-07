@@ -6,18 +6,24 @@ description: An overview of common questions about HyperPlay
 
 **Q: What is HyperPlay?**
 
-A: HyperPlay is a desktop application that provides both a web3-native game launcher and an aggregator of game stores. HyperPlay allows players to install games from the Epic Store, GOG, or our own HyperPlay store. Players can connect their MetaMask or WalletConnect wallet to our native desktop application, and then use their wallet inside of every game launched from within HyperPlay, even in native desktop games. HyperPlay was developed in partnership with [**MetaMask**](https://metamask.io) and was incubated by [**Game7**](https://game7.io/), a DAO focused on accelerating the adoption of sustainable web3-native gaming. In June of 2023, we closed a capital raise and became an independent company.
+A: HyperPlay is a desktop application that provides both a web3-native game store and an aggregator of other game stores. HyperPlay allows players to install games from the Epic Store, GOG, Amazon Prime Gaming, or our own HyperPlay store. Players can connect their MetaMask or WalletConnect wallet to our native desktop application, and then use their wallet inside of every game launched from within HyperPlay, even in native desktop games. HyperPlay was developed in partnership with [**MetaMask**](https://metamask.io) and was incubated by [**Game7**](https://game7.io/), a DAO focused on accelerating the adoption of sustainable web3-native gaming. In June of 2023, we closed a capital raise and became an independent company.
+
+
+
+**Q: Is HyperPlay related to MetaMask?**
+
+We are built in close partnership with MetaMask, and our founder was previously Lead of Operations for MetaMask. MetaMask wrote a [case study](https://metamask.io/news/developers/how-hyperplay-is-building-a-web-3-game-store-with-the-metamask-developer/) about how we work together and you can see some of their[ tweet threads](https://twitter.com/MetaMask/status/1630995052402016256) about the collaboration as well.
 
 
 
 **Q: Does HyperPlay have a token?**
 
-A: Not at this time, but we’ll see.\
+A: Not yet. :smile:\
 
 
 **Q: Is HyperPlay open source?**&#x20;
 
-A: Yes. HyperPlay is open source, mainly under a GPL license. A small number of our products like the HyperPlay developer portal and the wallet overlay are issued under a proprietary license, although we are working to progressively be more open source over time.\
+A: Yes. HyperPlay is open source, mainly under a GPL license. A small number of our products like the HyperPlay developer portal, game hosting, and the wallet overlay plugin are issued under a separate proprietary license, although we are working to progressively be more open source over time.\
 
 
 **Q: How do games get included in HyperPlay?**
@@ -28,7 +34,7 @@ A: HyperPlay is an aggregator of game stores, so the answer varies per store. De
 
 **Q: What does HyperPlay charge developers to be included? Steam and Apple are charging 30% fees. Will HyperPlay charge similar fees?**
 
-A: HyperPlay takes no cut from game purchases or in-game transactions. For developers releasing through Epic or GOG, the fees of those stores still apply, but we add no additional fees.&#x20;
+A: HyperPlay takes no listing fee or in-game transaction fees. HyperPlay is free for game developers. For developers releasing through Epic or GOG, the fees of those stores still apply, but we add no additional fees.&#x20;
 
 
 
@@ -44,13 +50,16 @@ A: Players can use MetaMask Mobile, the MetaMask browser extension, or any Walle
 
 
 
-**Q: How will HyperPlay keep players safe from scams, malware, and other attack vectors?**
+**Q: How will HyperPlay keep players safe from scams, malware, and other attack vectors? Does HyperPlay have access to my secret recovery phrase?**
 
-A: There are four critical components to HyperPlay’s security strategy. \
+A: HyperPlay does not have access to your secret recovery phrase. To understand HyperPlay's security model, it is first important to understand how HyperPlay works. From a technical perspective, HyperPlay is actually a gaming-focused Electron-based web browser that includes built-in wallet implementations like MetaMask and WalletConnect.&#x20;
 
+HyperPlay functions very similarly to the way Chrome does in relationship to the MetaMask browser extension. If you select the MetaMask browser extension as your wallet method, HyperPlay can import your extension MetaMask installation from your current web browser to the MetaMask installation included within HyperPlay. Your secret recovery phrase remains encrypted within the wallet vault file, and only you can access them by using your MetaMask password. For advanced users and developers, we also support importing a wallet with a 12 or 24 word secret recovery phrase. From a security perspective, this feature is essentially identical to setting up a new MetaMask install within Chrome.  If you lose your 12 or 24 word secret recovery phrase, there is nothing the HyperPlay team can do to help you recover it as we never had access to your keys or funds.
+
+Overall, there are four critical components to HyperPlay’s security strategy.&#x20;
 
 1. **Store review:** all stores included in our app (HyperPlay, Epic, GOG) do extensive malware testing and diligence on the development teams for any software submitted through our store, including both static analysis and dynamic analysis. We never allow any title to be published without security review.
-2. **Game sandboxes:** Because it is impossible to ensure that no malware will ever slip through a store review process, we’re introducing game sandboxes that prevent a malicious game that slipped through a store review process from acting outside of its own context. We aim to launch this feature soon.
+2. **Game sandboxes:** Because it is impossible to ensure that no malware will ever slip through a store review process (see the many news stories about malware included in Steam), we’re introducing game sandboxes that prevent a malicious game that slipped through a store review process from acting outside of its own context. We aim to launch this feature soon.
 3. **Key segregation:** HyperPlay never exposes a user’s keys to games. The wallet lives within our desktop application or on an external mobile device. Games can submit transaction requests to HyperPlay, which we show to the user. The game cannot access the user’s keys or sign on behalf of the user without user consent.
 4. **External signer:** It isn’t a coincidence that we support MetaMask Mobile and WalletConnect. Keeping the keys off of one’s device, and having transactions pop up on an external mobile device is an inherently more secure pattern. For security conscious users, we strongly recommend the MetaMask Mobile integration as the most secure connection method. Even in the event that a user's computer becomes compromised, this pattern should keep the malware from being able to access the keys.
 
@@ -72,7 +81,7 @@ A: All EVM networks are supported, including Ethereum, zkSync, Polygon, Mantle, 
 
 **Q: What operating systems are supported?**
 
-A: HyperPlay supports Windows, SteamDeck, MacOS, and Linux. We are integrated with Wine-Crossover, improving game compatibility on Mac. For SteamDeck and Linux players, HyperPlay integrate with the [Proton compatibility library](https://www.protondb.com/), allowing Windows games to run natively.
+A: HyperPlay supports Windows, SteamDeck, MacOS, and Linux. We are also integrated with GPTK and Wine-Crossover, providing game compatibility on Mac. For SteamDeck and Linux players, HyperPlay integrates with the [Proton compatibility library](https://www.protondb.com/), allowing Windows games to run natively. We can't promise that Windows game will run perfectly on Mac or Linux through these compatibility libraries, but we do our best to provide this kind of support.
 
 
 
@@ -90,7 +99,7 @@ A: Yes! HyperPlay's co-founder Flavio Lima is also the founder of the Heroic Gam
 
 **Q: What are some of the benefits for developers launching their games through this platform?**
 
-A: We solve many developer experience problems (ie. the wallet-to-game interaction problem) to make it easier to build great web3 game experiences. Additionally, our model of aggregating many stores provides a safe haven for web3 game developers who have been constantly de-platformed and taxed by monopolistic web2 companies. We are a developer loyal platform that aims to promote freedom and permissionless innovation.\
+A: HyperPlay is the most-developer loyal game distribution platform. We solve many developer experience problems (ie. the wallet-to-game interaction problem) to make it easier to build great web3 game experiences. Additionally, our model of aggregating many stores provides a safe haven for web3 game developers who have been constantly de-platformed and exploited by monopolistic web2 companies. We are a developer loyal platform that aims to promote freedom and permissionless innovation. Many user acquisition features are coming for our developer community as well.\
 
 
 **Q: How does HyperPlay make money?**
