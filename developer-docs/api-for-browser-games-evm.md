@@ -9,11 +9,11 @@ Browser-based games receive a number of advantages by being listed in HyperPlay.
 * Greater distribution and discovery by web3 players
 * Graphics card acceleration through WebGPU ensures that games perform well
 * Games are opened in a full-screen view, making them feel more like native games
-* Developers get access to the full-suite of tools, incentives, and features that HyperPlay ecosystem provides to game developers.
+* Developers get access to the full-suite of tools, incentives, and features that HyperPlay ecosystem provides to game developers.4
 
-Integrating browser-based games is simple!&#x20;
+**If your game is already compatible with MetaMask, either through window.ethereum or the MetaMask SDK, your game is already compatible with HyperPlay's wallet overlay.**&#x20;
 
-**If your game is already compatible with MetaMask, either through window.ethereum or the MetaMask SDK, your game is already compatible with HyperPlay's wallet overlay.** The HyperPlay application injects the player's wallet into browser pages much in the same way that a typical web browser running the MetaMask browser extension would. Any calls made to the wallet on your page will be relayed to the user's selected wallet.
+The HyperPlay application injects the player's wallet into browser pages much in the same way that a typical web browser running the MetaMask browser extension would. Any calls made to the wallet on your page will be relayed to the user's selected wallet.
 
 If you're new to implementing MetaMask, we recommend starting with MetaMask's developer docs. There are multiple ways to integrate MetaMask, including both MetaMask's new SDK or utilizing a convenience library and window.ethereum directly.
 
