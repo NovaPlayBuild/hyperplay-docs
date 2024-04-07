@@ -1,6 +1,6 @@
 # 🎨 HyperPlay Hex Codes
 
-This PDF document contains the Hex codes for the color scheme used in the **HyperPlay Game Launcher**. While not mandatory for developers, this resource provides you with easy access to the specific colors used in our application. Whether you are a developer, designer, or simply interested in replicating the visual aesthetics of HyperPlay, this PDF will assist you in incorporating the color scheme into your projects.
+This PDF document contains the Hex codes for the color scheme used in the HyperPlay ecosystem. While not mandatory for developers, this resource provides you with easy access to the specific colors used in our application. Whether you are a developer, designer, or simply interested in replicating the visual aesthetics of HyperPlay, this PDF will assist you in incorporating the color scheme into your projects.
 
 **Usage**: To utilize the Hex codes in your projects, follow these steps:
 

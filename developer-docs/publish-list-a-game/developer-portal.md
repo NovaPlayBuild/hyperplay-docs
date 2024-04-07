@@ -1,4 +1,4 @@
-# 🖥 Developer Portal
+# 🖥️ Developer Portal
 
 During your onboarding session with our team, we will provide you with a direct link to our Developer Portal where you can publish your game.
 
@@ -85,8 +85,11 @@ Here, you can provide more information about your game by filling out the follow
 * Website
 * Type
   * Options include: Browser or Native Desktop
+* Define whether the game is eligible for HyperPlay rewards
+  * HyperPlay provides algorithmic bonuses and partnership rewards to games that adopt the platform more fully. Full details of each rewards program is available in the developer portal.
 * Genres
 * Supported Blockchain Networks
+* (Optional) Use the Epic Games Store for hosting
 
 The **"Supported Blockchain Networks"** field is optional, but it helps us to categorize your game accurately and verify the contracts that users will be interacting with.
 

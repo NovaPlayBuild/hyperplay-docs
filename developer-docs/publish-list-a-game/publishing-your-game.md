@@ -1,11 +1,8 @@
 # 📃 Publishing Your Game
 
-To get started with publishing your game on the HyperPlay Library, fill out the application form below with the required information. Our team will then carefully review your application and contact you directly to schedule a meeting to discuss the publishing process. Rest assured that we strive to make the process as straightforward as possible for you and are here to help every step of the way.
-
-{% embed url="https://docs.google.com/forms/d/e/1FAIpQLSdR-nIKJp-ZeqiaoXKlXK8kWISPwkyk0Y898YAvUbcSbY4K9w/viewform" %}
-
-{% hint style="info" %}
-**IMPORTANT:** We recommend developers have a playable build before applying to list their game to expedite the process. Our developer docs are user-friendly and will guide you through each step of the publishing process. Once we meet with you, we'll provide you with a link to our developer portal.
-{% endhint %}
-
-After completing all the necessary steps, our security team will review your submitted build to ensure there is no malicious content and that the game is safe for our players. The review process typically takes up to five business days. Upon completion, we will publish your game on the HyperPlay store for players to download and enjoy.
+1. To get started with publishing your game on the HyperPlay Library, fill out the application form below with the required information. Our team will then carefully review your application and contact you directly to schedule a meeting to discuss the publishing process. Rest assured that we strive to make the process as straightforward as possible for you and are here to help every step of the way.  [**List a Game in HyperPlay**](https://docs.google.com/forms/d/e/1FAIpQLSdR-nIKJp-ZeqiaoXKlXK8kWISPwkyk0Y898YAvUbcSbY4K9w/viewform)
+2. Attend your developer onboarding call. We recommend bringing both technical and marketing related team members to the onboarding call since we'll review all aspects of building with HyperPlay on the call.
+3. After completing the onboarding call, you'll be granted access to the [**HyperPlay Developer Portal**](https://developers.hyperplay.xyz). Please note that game builds submitted through the HyperPlay developer portal by game studios that haven't completed onboarding will be rejected.
+4. On the HyperPlay developer portal, you'll create an account for your game studio, a listing for your game, and submit your game build. A detailed review of using the Developer Portal is available [**here**](developer-portal.md).
+5. After submitting your game, you'll need to add a Download on HyperPlay or Play on HyperPlay badge to your game's website in order to be eligible to be in the platform. To make this easier, HyperPlay provides a [**badge creator**](https://www.hyperplay.xyz/badges) that you can use to generate a badge for your site.
+6. After completing all the necessary steps, our security team will review your submitted build to ensure there is no malicious content and that the game is safe for our players. The review process typically takes up to three business days on first submission and 1 business day on subsequent submission. Upon completion, we will publish your game on the HyperPlay Store for players to download and enjoy.
