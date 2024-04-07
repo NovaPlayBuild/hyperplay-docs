@@ -1,22 +1,29 @@
 ---
-description: A web3-native game launcher from the future.
+description: A web3-native game store from the future.
 ---
 
 # 🟣 HyperPlay
 
 ## Welcome to HyperPlay
 
-HyperPlay is a web3-native game launcher that enables players to carry their wallet, NFTs, tokens, and achievements into every game. HyperPlay makes in-game wallet interactions seamless and intuitive.&#x20;
+HyperPlay is the game store from the future where players discover great games, and developers find a censorship-resistant and developer-loyal distribution platform.&#x20;
 
-HyperPlay aims to reverse the de-platforming of game developers and the monopolistic fees of web2 platforms. We provide a web3-native game store and aggregate the Epic Store and GOG, providing developers with maximal freedom to choose the store that works best for them.
+HyperPlay solves the largest user experience and infrastructure problems facing both the players and developers of web3-enabled games. Through a rich in-game overlay with web3 features, HyperPlay improves the experience of playing games. Our in-game overlay features seamless wallet interactions powered by MetaMask and WalletConnect.&#x20;
 
-## GDC 2023 HyperPlay Presentation
+HyperPlay’s developer solutions are the easiest to adopt in the industry, from simple and optional wallet APIs to rich quest builders and smart contract factories. Game developers can interact with our APIs directly from Unity, Unreal, proprietary games engines, or window.ethereum for browser based games. Developers who prefer a no-code solution can leverage simple SDKs for both the Unreal and Unity game engines.
 
-Watch our founder's presentation from GDC 2023 to learn more about the new kind of game launcher we've built.
+Unlike legacy game stores, HyperPlay aggregates other game stores like Epic Games, GOG, and Amazon Prime Gaming bringing the largest library and game discovery to players.&#x20;
+
+Free from OS siloes, HyperPlay is available on Windows, Mac, and Linux and enables Windows games to be played on Mac and Linux. Browser-based games and dapps are supported too, and receive graphics card acceleration and our overlay when played through the HyperPlay app.\
+
+
+## ETHDenver 2024 HyperPlay Presentation
+
+Watch our founder's presentation from ETHDenver 2024 to learn more about the new kind of game launcher we've built.
 
 Developers unlock new audiences and revenue streams. Players, say goodbye to fragmented platforms and embrace the universe of games at your fingertips.
 
-{% embed url="https://bit.ly/3Mmpaar" %}
+{% embed url="https://www.youtube.com/watch?v=VhS_oSikQQw" %}
 
 ## Installing HyperPlay
 

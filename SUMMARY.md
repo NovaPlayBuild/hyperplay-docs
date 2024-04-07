@@ -2,12 +2,12 @@
 
 * [🟣 HyperPlay](README.md)
 * [🎮 Overview](overview.md)
-* [⬇ Install HyperPlay](install-hyperplay.md)
+* [⬇️ Install HyperPlay](install-hyperplay.md)
 * [❓ FAQ](faq.md)
 
 ## Developer Docs
 
-* [🕹 API for Native Games (EVM)](developer-docs/api/README.md)
+* [🕹️ API for Native Games (EVM)](developer-docs/api/README.md)
   * [Get Accounts](developer-docs/api/get-accounts.md)
   * [Sign-in With Ethereum](developer-docs/api/sign-in-with-ethereum.md)
   * [Get Balance](developer-docs/api/get-balance.md)
@@ -29,14 +29,14 @@
     * [Personal Sign](developer-docs/api-1/sui-blockchain/personal-sign.md)
 * [🌐 API for Browser Games (EVM)](developer-docs/api-for-browser-games-evm.md)
 * [📜 Publishing](developer-docs/publishing/README.md)
-  * [🅰 Current Alpha Build State](developer-docs/publishing/current-alpha-build-state.md)
-  * [⚒ Building with HyperPlay](developer-docs/publishing/building-with-hyperplay.md)
+  * [🅰️ Current Alpha Build State](developer-docs/publishing/current-alpha-build-state.md)
+  * [⚒️ Building with HyperPlay](developer-docs/publishing/building-with-hyperplay.md)
   * [📃 Publishing Your Game](developer-docs/publishing/publishing-your-game.md)
-  * [🖥 Developer Portal](developer-docs/publishing/developer-portal.md)
+  * [🖥️ Developer Portal](developer-docs/publishing/developer-portal.md)
   * [📛 HyperPlay Store Badges](developer-docs/publishing/hyperplay-store-badges.md)
   * [🎨 HyperPlay Hex Codes](developer-docs/publishing/hyperplay-hex-codes.md)
   * [🆘 Feedback & Developer Support](developer-docs/publishing/feedback-and-developer-support.md)
-* [⌨ Design Considerations](developer-docs/design-considerations/README.md)
+* [⌨️ Design Considerations](developer-docs/design-considerations/README.md)
   * [Unreal Engine Integration](developer-docs/design-considerations/unreal-engine-integration.md)
   * [Unity Integration](developer-docs/design-considerations/unity-integration.md)
 * [🏪 Store APIs](developer-docs/store-apis/README.md)
