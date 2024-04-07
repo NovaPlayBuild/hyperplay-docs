@@ -4,9 +4,15 @@ description: Suggestions for how to integrate HyperPlay with your Unity Project
 
 # Unity Integration
 
-## SDK's
+## Integration pathes
 
-The [Chainsafe web3.unity](https://github.com/ChainSafe/web3.unity) sdk is recommended for reads of blockchain state.&#x20;
+Unity games seeking to leverage HyperPlay's wallet features may do so through direct HTTP API calls, or through no-code SDKs provided through HyperPlay's partners.
+
+## SDKs
+
+Our recommended SDK for Unity developers is [ThirdWeb](https://thirdweb.com/), which has a [deep integration](https://portal.thirdweb.com/unity/wallets/actions/connect) with HyperPlay's wallet features out of the box.
+
+Developers using other SDKs can still integrate directly using our [Wallet API](../api/).
 
 ## C\#
 
