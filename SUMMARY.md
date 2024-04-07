@@ -29,7 +29,6 @@
     * [Personal Sign](developer-docs/api-1/sui-blockchain/personal-sign.md)
 * [🌐 API for Browser Games (EVM)](developer-docs/api-for-browser-games-evm.md)
 * [📜 Publish / List a Game](developer-docs/publish-list-a-game/README.md)
-  * [🅰️ Current Alpha Build State](developer-docs/publish-list-a-game/current-alpha-build-state.md)
   * [⚒️ Building with HyperPlay](developer-docs/publish-list-a-game/building-with-hyperplay.md)
   * [📃 Publishing Your Game](developer-docs/publish-list-a-game/publishing-your-game.md)
   * [🖥️ Developer Portal](developer-docs/publish-list-a-game/developer-portal.md)
