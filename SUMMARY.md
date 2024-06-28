@@ -26,6 +26,7 @@
   * [Send Contract](developer-docs/api/erc20-transfer-example.md)
   * [Personal Sign](developer-docs/api/personal-sign.md)
   * [Sign Typed Data v3](developer-docs/api/sign-typed-data-v3.md)
+  * [Sign Typed Data v4](developer-docs/api/sign-typed-data-v4.md)
   * [Add or Switch Network](developer-docs/api/add-or-switch-network.md)
   * [Add Token](developer-docs/api/add-token.md)
   * [RPC Raw](developer-docs/api/add-token-1.md)
