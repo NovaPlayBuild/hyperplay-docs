@@ -39,5 +39,7 @@
     * [Send Contract](developer-docs/api-1/sui-blockchain/send-contract.md)
     * [Personal Sign](developer-docs/api-1/sui-blockchain/personal-sign.md)
 * [🌐 API for Browser Games (EVM)](developer-docs/api-for-browser-games-evm.md)
+* [🚀 Quests](developer-docs/quests/README.md)
+  * [How to Create a Quest](developer-docs/quests/how-to-create-a-quest.md)
 * [🏪 Store APIs](developer-docs/store-apis/README.md)
   * [Listings by Popularity](developer-docs/store-apis/listings-by-popularity.md)
