@@ -10,6 +10,14 @@ A: HyperPlay is a desktop application that provides both a web3-native game stor
 
 
 
+**Q: What are HyperPlay Quests? What can I win by completing these quests?**
+
+A: HyperPlay has built-in questing used by the games in the HyperPlay Store. Players can win tokens, NFTs, and off-chain points by completing the various quests created by the game developers who compose the HyperPlay community.&#x20;
+
+Available Quests appear both in the Quest directory, the game's Store listing, and in the HyperPlay overlay while the player in in-game. You can browser the HyperPlay Store here, or open up the HyperPlay app and select "Quests" on the left sidebar. Once you've earned quest rewards, the quest rewards are claimed in-game, using the HyperPlay overlay.
+
+
+
 **Q: Is HyperPlay related to MetaMask?**
 
 We are built in close partnership with MetaMask, and our founder was previously Lead of Operations for MetaMask. MetaMask wrote a [case study](https://metamask.io/news/developers/how-hyperplay-is-building-a-web-3-game-store-with-the-metamask-developer/) about how we work together and you can see some of their[ tweet threads](https://twitter.com/MetaMask/status/1630995052402016256) about the collaboration as well.
@@ -26,9 +34,19 @@ A: Not yet. :smile:\
 A: Yes. HyperPlay is open source, mainly under a GPL license. A small number of our products like the HyperPlay developer portal, game hosting, and the wallet overlay plugin are issued under a separate proprietary license, although we are working to progressively be more open source over time.\
 
 
-**Q: How do games get included in HyperPlay?**
+**Q: How do games list in the HyperPlay Store?**
 
-A: HyperPlay is an aggregator of game stores, so the answer varies per store. Developers seeking to list in the HyperPlay Store should get in contact with us through [**this form**](https://forms.gle/A3mQ8A7CTWrDo8LD6). Once your application is processed, we'll schedule an onboarding call and grant you access to the HyperPlay developer portal where you can manage your game builds. Games listed through the Epic Games Store or GOG will automatically become available to players inside of HyperPlay. We recommend reaching out to those stores directly.
+A: Developers seeking to list in the HyperPlay Store should get in contact with us through [**this form**](https://forms.gle/A3mQ8A7CTWrDo8LD6). Once your application is processed, we'll schedule an onboarding call and grant you access to the HyperPlay developer portal where you can manage your game builds.&#x20;
+
+Since HyperPlay aggregates other game stores like the Epic Games Store, we also offer an option to create a "Forwarder Listing" inside the HyperPlay Store that will download the game from the Epic Games Store. Games looking to create a forwarder listing inside the HyperPlay Store should get in contact using the [same listing form](https://docs.google.com/forms/d/e/1FAIpQLSdR-nIKJp-ZeqiaoXKlXK8kWISPwkyk0Y898YAvUbcSbY4K9w/viewform) above. For listing in the Epic Games Store or GOG, we recommend reaching out to those stores directly.
+
+
+
+**Q: As a game developer, how do I create quests for my game?**
+
+A: You can build quests directly inside of the HyperPlay developer portal where you manage you game's listing. Most quest types require no engineering effort, and can even be built by a non-technical team member! The quests are all handled by HyperPlay and decentralized smart contracts end-to-end. HyperPlay's developer portal will deploy your game's quest smart contract, the HyperPlay overlay tracks player eligibility, and players claim the quest reward while in-game, through the HyperPlay overlay.
+
+At launch, we support Play Streak quests, but other quest types are coming like Reputation Airdrops, Leaderboards, and In-game Achievements are all coming soon. Play Streak Quests and Reputation Airdrops can be created with no engineering effort from game teams, while the Leaderboards and In-game Achievement quests can be implemented by integrating with a simple API for tracking player progress.
 
 
 
