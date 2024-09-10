@@ -38,7 +38,7 @@ Next, you'll encounter a message asking you to sign in and complete the verifica
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-18 at 6.00.02 PM.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-It's essential to note that for security reasons, you ensure that the URI below the **"Sign in with Ethereum to HyperPlay"** prompt shows the Developer Portal URL.
+It's essential to note that for security reasons, you ensure that the URI below the **"Sign in with Ethereum to NovaPlay"** prompt shows the Developer Portal URL.
 {% endhint %}
 
 #### Setting up your Account
@@ -85,8 +85,8 @@ Here, you can provide more information about your game by filling out the follow
 * Website
 * Type
   * Options include: Browser or Native Desktop
-* Define whether the game is eligible for HyperPlay rewards
-  * HyperPlay provides algorithmic bonuses and partnership rewards to games that adopt the platform more fully. Full details of each rewards program is available in the developer portal.
+* Define whether the game is eligible for NovaPlay rewards
+  * NovaPlay provides algorithmic bonuses and partnership rewards to games that adopt the platform more fully. Full details of each rewards program is available in the developer portal.
 * Genres
 * Supported Blockchain Networks
 * (Optional) Use the Epic Games Store for hosting
@@ -103,7 +103,7 @@ After filling out your game's metadata, proceed by clicking on the **"Continue"*
 
 Now it's time to configure your game's system requirements. Provide the minimum requirements your game needs, such as CPU, GPU, Memory, and Disk.&#x20;
 
-You can also check the Compatibility Library Support if your game is playable on Linux and/or macOS using the Proton compatibility support built into the HyperPlay Launcher. If you have tested your game on these systems, select the relevant operating system checkboxes.
+You can also check the Compatibility Library Support if your game is playable on Linux and/or macOS using the Proton compatibility support built into the NovaPlay Launcher. If you have tested your game on these systems, select the relevant operating system checkboxes.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-19 at 3.37.19 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -216,9 +216,9 @@ Upon successful upload and submission of your release, you will receive the foll
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-19 at 3.39.24 PM.png" alt=""><figcaption></figcaption></figure>
 
-Once your release is submitted, it will be received by the HyperPlay team for review and verification. The process generally takes less than **five business days**.
+Once your release is submitted, it will be received by the NovaPlay team for review and verification. The process generally takes less than **five business days**.
 
-Congratulations on successfully submitting your release to the HyperPlay Store! We are thrilled to work with you in building the next generation of gaming.
+Congratulations on successfully submitting your release to the NovaPlay Store! We are thrilled to work with you in building the next generation of gaming.
 {% endtab %}
 {% endtabs %}
 

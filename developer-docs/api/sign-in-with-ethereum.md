@@ -55,12 +55,12 @@ public class PersonalSign : MonoBehaviour
 
 {% tab title="Unreal C++" %}
 ```cpp
-#include "HyperPlayUtils.h"
+#include "NovaPlayUtils.h"
 #include "Endpoints/RpcCall.h"
 
 void OnRpcResponse(FString Response, int32 StatusCode)
 {
-    const bool bWasSuccessful = HyperPlayUtils::StatusCodeIsSuccess(StatusCode);
+    const bool bWasSuccessful = NovaPlayUtils::StatusCodeIsSuccess(StatusCode);
 
     UE_LOG(LogTemp, Display, TEXT("Rpc Get Balance Success: %s"), bWasSuccessful ? "true" : "false");
     UE_LOG(LogTemp, Display, TEXT("Rpc Get Balance Response: %s"), *Response);
@@ -97,7 +97,7 @@ Sign-in with Ethereum (**SIWE**) is a form of authentication that enables users 
 4. **Wallet Interaction**: Your Ethereum wallet receives the authentication request message and prompts you to confirm the action. You typically need to approve the message by providing your wallet's digital signature using your private key to sign in. This signature serves as proof of your ownership of the Ethereum account.
 5. **Verification and Access**: Once you provide the signed message, the application validates the signature using the corresponding public key associated with your Ethereum account. If the verification is successful, the application grants you access to its services, treating your Ethereum account as a form of authentication. It's important to note that while "Sign in with Ethereum" provides benefits in terms of decentralization and security; it's still essential to exercise caution and protect your private key to prevent unauthorized access to your Ethereum account.
 
-### Let's review the process within HyperPlay
+### Let's review the process within NovaPlay
 
 <figure><img src="../../../../../.gitbook/assets/0_GLO_ZCNPBiJP7x6J.png" alt=""><figcaption></figcaption></figure>
 
@@ -182,7 +182,7 @@ The client will use their wallet to sign the message.
 
 <figure><img src="../../../../../.gitbook/assets/0_ppxZ6joVnc94J3w5.png" alt=""><figcaption></figcaption></figure>
 
-**cURL with HyperPlay**
+**cURL with NovaPlay**
 
 ```cpp
 curl --location --request POST "localhost:9680/rpc" \
@@ -205,7 +205,7 @@ curl --location --request POST "localhost:9680/rpc" \
 
 <figure><img src="../../../../../.gitbook/assets/0_IS02muzlxyayPUCU.jpg" alt=""><figcaption></figcaption></figure>
 
-#### Using Unity with HyperPlay
+#### Using Unity with NovaPlay
 
 ```cpp
 using System.Collections;
@@ -236,15 +236,15 @@ public class PersonalSign : MonoBehaviour
 }
 ```
 
-#### Using Unreal C++ with HyperPlay
+#### Using Unreal C++ with NovaPlay
 
 ```cpp
-#include "HyperPlayUtils.h"
+#include "NovaPlayUtils.h"
 #include "Endpoints/RpcCall.h"
 
 void OnRpcResponse(FString Response, int32 StatusCode)
 {
-    const bool bWasSuccessful = HyperPlayUtils::StatusCodeIsSuccess(StatusCode);
+    const bool bWasSuccessful = NovaPlayUtils::StatusCodeIsSuccess(StatusCode);
 
     UE_LOG(LogTemp, Display, TEXT("Rpc Get Balance Success: %s"), bWasSuccessful ? "true" : "false");
     UE_LOG(LogTemp, Display, TEXT("Rpc Get Balance Response: %s"), *Response);

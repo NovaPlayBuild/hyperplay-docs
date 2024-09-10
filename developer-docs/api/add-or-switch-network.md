@@ -2,7 +2,7 @@
 
 ## Request
 
-Leveraging EIP-3085, HyperPlay can pass requests to add a custom network, or switch to the appropriate network, for the user's MetaMask or WalletConnect wallet.&#x20;
+Leveraging EIP-3085, NovaPlay can pass requests to add a custom network, or switch to the appropriate network, for the user's MetaMask or WalletConnect wallet.&#x20;
 
 Network information, including a directory of public RPC endpoints, can be found [here](https://chainlist.org/).
 
@@ -104,11 +104,11 @@ Then copy and paste the following into the Chain Metadata input pin
 
 ```cpp
 #include "Endpoints/GetAccounts.h"
-#include "HyperPlayUtils.h"
+#include "NovaPlayUtils.h"
 
 void OnResponse(FString Response, int32 StatusCode)
 {
-	const bool bWasSuccessful = HyperPlayUtils::StatusCodeIsSuccess(StatusCode);
+	const bool bWasSuccessful = NovaPlayUtils::StatusCodeIsSuccess(StatusCode);
 
 	UE_LOG(LogTemp, Display, TEXT("GetAccounts Success: %s"), bWasSuccessful ? "true" : "false");
 	UE_LOG(LogTemp, Display, TEXT("GetAccounts Response: %s"), *Response);

@@ -12,7 +12,7 @@ Sui is a Layer 1 blockchain with a unique architecture.&#x20;
 
 ## MetaMask Snaps
 
-With MetaMask snaps, HyperPlay now supports Sui.&#x20;
+With MetaMask snaps, NovaPlay now supports Sui.&#x20;
 
 [MetaMask Snaps](https://snaps.metamask.io/) is an open source system that allows anyone to safely extend the functionality of MetaMask. This includes:
 
@@ -20,6 +20,6 @@ With MetaMask snaps, HyperPlay now supports Sui.&#x20;
 * Receiving on chain notifications
 * Connecting to non-EVM blockchains
 
-Any Snaps installed on MetaMask browser can be used in HyperPlay.
+Any Snaps installed on MetaMask browser can be used in NovaPlay.
 
 {% embed url="https://www.youtube.com/watch?v=27fyjQJrR8s" %}

@@ -1,8 +1,8 @@
-# ⬇ Install HyperPlay
+# ⬇ Install NovaPlay
 
 ## Install Desktop Client
 
-{% embed url="https://www.hyperplay.xyz/downloads" %}
+{% embed url="https://www.novaplay.io/downloads" %}
 
 ## Connect Wallet
 
@@ -18,4 +18,4 @@ View fullscreen to verify your account is connected.
 
 <figure><img src=".gitbook/assets/view fullscreen.png" alt=""><figcaption><p>Connecting to metamask browser</p></figcaption></figure>
 
-Game assets from your mobile wallet will automatically sync with any game you launch. To understand how to sync games to the wallet, please refer to the HyperPlay API.
+Game assets from your mobile wallet will automatically sync with any game you launch. To understand how to sync games to the wallet, please refer to the NovaPlay API.

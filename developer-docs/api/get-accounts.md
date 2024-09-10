@@ -4,7 +4,7 @@
 
 Get the user's currently selected address
 
-Note that HyperPlay currently supports a single globally selected account during its connection flow. In the future, multiple account addresses will be supported.
+Note that NovaPlay currently supports a single globally selected account during its connection flow. In the future, multiple account addresses will be supported.
 
 {% tabs %}
 {% tab title="curl" %}
@@ -55,7 +55,7 @@ public class GetAccounts: MonoBehaviour
 {% endtab %}
 
 {% tab title="Unreal Blueprints" %}
-If you have the HyperPlay plugin installed, copy and paste the following into a Blueprint Graph.
+If you have the NovaPlay plugin installed, copy and paste the following into a Blueprint Graph.
 
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_AsyncAction Name="K2Node_AsyncAction_3"
@@ -81,11 +81,11 @@ End Object
 {% tab title="Unreal Engine C++" %}
 ```cpp
 #include "Endpoints/GetAccounts.h"
-#include "HyperPlayUtils.h"
+#include "NovaPlayUtils.h"
 
 void OnResponse(FString Response, int32 StatusCode)
 {
-	const bool bWasSuccessful = HyperPlayUtils::StatusCodeIsSuccess(StatusCode);
+	const bool bWasSuccessful = NovaPlayUtils::StatusCodeIsSuccess(StatusCode);
 
 	UE_LOG(LogTemp, Display, TEXT("GetAccounts Success: %s"), bWasSuccessful ? "true" : "false");
 	UE_LOG(LogTemp, Display, TEXT("GetAccounts Response: %s"), *Response);

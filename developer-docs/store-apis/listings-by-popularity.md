@@ -2,11 +2,11 @@
 
 ## Get Store Listings
 
-{% swagger method="get" path="" baseUrl="https://store.hyperplay.xyz/api/popularity" summary="Get Listings ordered by popularity" expanded="true" fullWidth="false" %}
+{% swagger method="get" path="" baseUrl="https://store.novaplay.io/api/popularity" summary="Get Listings ordered by popularity" expanded="true" fullWidth="false" %}
 {% swagger-description %}
 This specific request is tailored to fetch a list of meticulously reviewed games, showcasing the best and most popular titles currently available.
 
-This endpoint returns all games listed on HyperPlay, ordered by descending popularity.
+This endpoint returns all games listed on NovaPlay, ordered by descending popularity.
 {% endswagger-description %}
 
 {% swagger-parameter in="query" name="verified" type="Boolean" %}
@@ -31,7 +31,7 @@ Returns games that have MetaMask compatible marketplaces
 {% tabs %}
 {% tab title="Curl Request" %}
 ```bash
-curl --location 'https://store.hyperplay.xyz/api/popularity' \
+curl --location 'https://store.novaplay.io/api/popularity' \
 --header 'Content-Type: application/json'
 ```
 {% endtab %}

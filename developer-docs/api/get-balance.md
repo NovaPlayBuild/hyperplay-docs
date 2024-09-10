@@ -192,12 +192,12 @@ End Object
 
 {% tab title="Unreal Engine C++" %}
 ```cpp
-#include "HyperPlayUtils.h"
+#include "NovaPlayUtils.h"
 #include "Endpoints/RpcCall.h"
 
 void OnRpcResponse(FString Response, int32 StatusCode)
 {
-	const bool bWasSuccessful = HyperPlayUtils::StatusCodeIsSuccess(StatusCode);
+	const bool bWasSuccessful = NovaPlayUtils::StatusCodeIsSuccess(StatusCode);
 
 	UE_LOG(LogTemp, Display, TEXT("Rpc Get Balance Success: %s"), bWasSuccessful ? "true" : "false");
 	UE_LOG(LogTemp, Display, TEXT("Rpc Get Balance Response: %s"), *Response);

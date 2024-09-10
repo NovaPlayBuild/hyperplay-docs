@@ -1,5 +1,5 @@
 ---
-description: Suggestions for how to integrate HyperPlay with your Unreal Engine Project
+description: Suggestions for how to integrate NovaPlay with your Unreal Engine Project
 ---
 
 # Unreal Engine Integration
@@ -12,7 +12,7 @@ There are several options in Unreal Engine for making HTTP requests depending on
 
 We have built a free and open source plugin specifically for Unreal devs that wraps the UE HTTP runtime.&#x20;
 
-This plugin exposes async nodes globally that parse input and output parameters into HyperPlay calls. This way you can work in an Unreal context without having to worry about formatting or syntax errors.&#x20;
+This plugin exposes async nodes globally that parse input and output parameters into NovaPlay calls. This way you can work in an Unreal context without having to worry about formatting or syntax errors.&#x20;
 
 See our API docs for examples you can easily copy and paste into your Blueprint graphs.
 
@@ -36,4 +36,4 @@ If you intend on using the UE HTTP runtime directly, it is recommended that you 
 
 ### Game instance
 
-Common HyperPlay API calls can be defined in your Game Instance class. This is a good place since it is available globally, only exists on the client side, and persists despite level changes and other changes to game state.
+Common NovaPlay API calls can be defined in your Game Instance class. This is a good place since it is available globally, only exists on the client side, and persists despite level changes and other changes to game state.

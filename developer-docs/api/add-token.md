@@ -74,7 +74,7 @@ public class AddToken : MonoBehaviour
 {% endtab %}
 
 {% tab title="Unreal Blueprints" %}
-If you have the HyperPlay plugin installed, copy and paste the following into a Blueprint Graph.
+If you have the NovaPlay plugin installed, copy and paste the following into a Blueprint Graph.
 
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_AsyncAction Name="K2Node_AsyncAction_1"
@@ -100,12 +100,12 @@ End Object
 {% tab title="Unreal Engine C++" %}
 
 ```cpp
-#include "HyperPlayUtils.h"
+#include "NovaPlayUtils.h"
 #include "Endpoints/RpcCall.h"
 
 void OnRpcResponse(FString Response, int32 StatusCode)
 {
-	const bool bWasSuccessful = HyperPlayUtils::StatusCodeIsSuccess(StatusCode);
+	const bool bWasSuccessful = NovaPlayUtils::StatusCodeIsSuccess(StatusCode);
 
 	UE_LOG(LogTemp, Display, TEXT("Rpc Personal Sign Success: %s"), bWasSuccessful ? "true" : "false");
 	UE_LOG(LogTemp, Display, TEXT("Rpc Personal Sign Response: %s"), *Response);

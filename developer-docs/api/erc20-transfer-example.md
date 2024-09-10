@@ -78,7 +78,7 @@ public class SendContract: MonoBehaviour
 {% endtab %}
 
 {% tab title="Unreal Blueprints" %}
-If you have the HyperPlay plugin installed, copy and paste the following into a Blueprint Graph for an example of how to send ERC20 tokens using the $FAU ERC20 contract deployed at 0xBA62BCfcAaFc6622853cca2BE6Ac7d845BC0f2Dc on Goerli.
+If you have the NovaPlay plugin installed, copy and paste the following into a Blueprint Graph for an example of how to send ERC20 tokens using the $FAU ERC20 contract deployed at 0xBA62BCfcAaFc6622853cca2BE6Ac7d845BC0f2Dc on Goerli.
 
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_AsyncAction Name="K2Node_AsyncAction_16"
@@ -117,12 +117,12 @@ End Object
 
 {% tab title="Unreal Engine C++" %}
 ```cpp
-#include "HyperPlayUtils.h"
+#include "NovaPlayUtils.h"
 #include "Endpoints/SendContract.h"
 
 void OnResponse(FString Response, int32 StatusCode)
 {
-	const bool bWasSuccessful = HyperPlayUtils::StatusCodeIsSuccess(StatusCode);
+	const bool bWasSuccessful = NovaPlayUtils::StatusCodeIsSuccess(StatusCode);
 
 	UE_LOG(LogTemp, Display, TEXT("SendContract Success: %s"), bWasSuccessful ? "true" : "false");
 	UE_LOG(LogTemp, Display, TEXT("SendContract Response: %s"), *Response);

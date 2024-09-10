@@ -92,12 +92,12 @@ public class CallContract : MonoBehaviour
 
 {% tab title="Unreal Engine C++" %}
 ```cpp
-#include "HyperPlayUtils.h"
+#include "NovaPlayUtils.h"
 #include "Endpoints/SendContract.h"
 
 void OnResponse(FString Response, int32 StatusCode)
 {
-	const bool bWasSuccessful = HyperPlayUtils::StatusCodeIsSuccess(StatusCode);
+	const bool bWasSuccessful = NovaPlayUtils::StatusCodeIsSuccess(StatusCode);
 
 	UE_LOG(LogTemp, Display, TEXT("CallContract Success: %s"), bWasSuccessful ? "true" : "false");
 	UE_LOG(LogTemp, Display, TEXT("CallContract Response: %s"), *Response);

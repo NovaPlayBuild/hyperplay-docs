@@ -198,13 +198,13 @@ End Object
 
 {% tab title="Unreal Engine C++" %}
 ```cpp
-#include "HyperPlayUtils.h"
+#include "NovaPlayUtils.h"
 #include "Endpoints/RpcCall.h"
 #include "Endpoints/GetAccounts.h"
 
 void OnRpcResponse(FString Response, int32 StatusCode)
 {
-	const bool bWasSuccessful = HyperPlayUtils::StatusCodeIsSuccess(StatusCode);
+	const bool bWasSuccessful = NovaPlayUtils::StatusCodeIsSuccess(StatusCode);
 
 	UE_LOG(LogTemp, Display, TEXT("Rpc get accounts Success: %s"), bWasSuccessful ? "true" : "false");
 	UE_LOG(LogTemp, Display, TEXT("Rpc sign typed data v3 Response: %s"), *Response);
@@ -212,14 +212,14 @@ void OnRpcResponse(FString Response, int32 StatusCode)
 
 void OnAcctResponse(FString Response, int32 StatusCode)
 {
-	const bool bWasSuccessful = HyperPlayUtils::StatusCodeIsSuccess(StatusCode);
+	const bool bWasSuccessful = NovaPlayUtils::StatusCodeIsSuccess(StatusCode);
 
 	UE_LOG(LogTemp, Display, TEXT("SendContract Success: %s"), bWasSuccessful ? "true" : "false");
 	UE_LOG(LogTemp, Display, TEXT("SendContract Response: %s"), *Response);
 
 	const FString request("{\"method\":\"eth_signTypedData_v3\",\"params\":[\""
 		+ Response
-		+ "\",\"{\\\"types\\\": {\\\"EIP712Domain\\\": [{\\\"name\\\": \\\"name\\\",\\\"type\\\": \\\"string\\\"},{\\\"name\\\": \\\"version\\\",\\\"type\\\": \\\"string\\\"}],\\\"LoginData\\\": [{\\\"name\\\": \\\"game\\\",\\\"type\\\": \\\"string\\\"},{\\\"name\\\": \\\"contents\\\",\\\"type\\\": \\\"string\\\"}]},\\\"primaryType\\\": \\\"LoginData\\\",\\\"domain\\\": {\\\"name\\\": \\\"HyperPlay\\\",\\\"version\\\": \\\"1\\\"},\\\"message\\\": {\\\"game\\\": \\\"HyperPlay FPS Demo\\\",\\\"contents\\\": \\\"Sign this message to log in!\\\"}}\"]}");
+		+ "\",\"{\\\"types\\\": {\\\"EIP712Domain\\\": [{\\\"name\\\": \\\"name\\\",\\\"type\\\": \\\"string\\\"},{\\\"name\\\": \\\"version\\\",\\\"type\\\": \\\"string\\\"}],\\\"LoginData\\\": [{\\\"name\\\": \\\"game\\\",\\\"type\\\": \\\"string\\\"},{\\\"name\\\": \\\"contents\\\",\\\"type\\\": \\\"string\\\"}]},\\\"primaryType\\\": \\\"LoginData\\\",\\\"domain\\\": {\\\"name\\\": \\\"NovaPlay\\\",\\\"version\\\": \\\"1\\\"},\\\"message\\\": {\\\"game\\\": \\\"NovaPlay FPS Demo\\\",\\\"contents\\\": \\\"Sign this message to log in!\\\"}}\"]}");
 
 	URpcCall* RpcCallInstance = URpcCall::RpcCall(nullptr,
 		request,

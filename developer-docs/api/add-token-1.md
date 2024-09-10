@@ -2,7 +2,7 @@
 
 ## Request
 
-HyperPlay’s API includes `chainId` in the request body for better UX and security.
+NovaPlay’s API includes `chainId` in the request body for better UX and security.
 
 rpcRaw
 

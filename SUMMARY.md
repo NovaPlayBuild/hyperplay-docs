@@ -1,18 +1,18 @@
 # Table of contents
 
-* [🟣 HyperPlay](README.md)
+* [🟣 NovaPlay](README.md)
 * [🎮 Overview](overview.md)
-* [⬇️ Install HyperPlay](install-hyperplay.md)
+* [⬇️ Install NovaPlay](install-hyperplay.md)
 * [❓ FAQ](faq.md)
 
 ## Developer Docs
 
 * [📜 Publish / List a Game](developer-docs/publish-list-a-game/README.md)
-  * [⚒️ Building with HyperPlay](developer-docs/publish-list-a-game/building-with-hyperplay.md)
+  * [⚒️ Building with NovaPlay](developer-docs/publish-list-a-game/building-with-hyperplay.md)
   * [📃 Publishing Your Game](developer-docs/publish-list-a-game/publishing-your-game.md)
   * [🖥️ Developer Portal](developer-docs/publish-list-a-game/developer-portal.md)
-  * [📛 HyperPlay Store Badges](developer-docs/publish-list-a-game/hyperplay-store-badges.md)
-  * [🎨 HyperPlay Hex Codes](developer-docs/publish-list-a-game/hyperplay-hex-codes.md)
+  * [📛 NovaPlay Store Badges](developer-docs/publish-list-a-game/hyperplay-store-badges.md)
+  * [🎨 NovaPlay Hex Codes](developer-docs/publish-list-a-game/hyperplay-hex-codes.md)
   * [🆘 Feedback & Developer Support](developer-docs/publish-list-a-game/feedback-and-developer-support.md)
 * [⌨️ Design Considerations](developer-docs/design-considerations/README.md)
   * [Unreal Engine Integration](developer-docs/design-considerations/unreal-engine-integration.md)

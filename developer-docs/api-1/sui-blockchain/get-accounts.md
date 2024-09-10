@@ -4,7 +4,7 @@
 
 Get the user's currently selected address
 
-Note that HyperPlay currently supports a single globally selected account during its connection flow. In the future, multiple account addresses will be supported.
+Note that NovaPlay currently supports a single globally selected account during its connection flow. In the future, multiple account addresses will be supported.
 
 {% tabs %}
 {% tab title="curl" %}
