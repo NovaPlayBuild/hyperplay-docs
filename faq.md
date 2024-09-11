@@ -20,7 +20,7 @@ Available Quests appear both in the Quest directory, the game's Store listing, a
 
 **Q: Is NovaPlay related to MetaMask?**
 
-We are built in close partnership with MetaMask, and our founder was previously Lead of Operations for MetaMask. MetaMask wrote a [case study](https://metamask.io/news/developers/how-hyperplay-is-building-a-web-3-game-store-with-the-metamask-developer/) about how we work together and you can see some of their[ tweet threads](https://twitter.com/MetaMask/status/1630995052402016256) about the collaboration as well.
+We are built in close partnership with MetaMask, and our founder was previously Lead of Operations for MetaMask. MetaMask wrote a [case study](https://metamask.io/news/developers/how-novaplay-is-building-a-web-3-game-store-with-the-metamask-developer/) about how we work together and you can see some of their[ tweet threads](https://twitter.com/MetaMask/status/1630995052402016256) about the collaboration as well.
 
 
 
