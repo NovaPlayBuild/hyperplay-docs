@@ -30,8 +30,8 @@ Developers unlock new audiences and revenue streams. Players, say goodbye to fra
 NovaPlay is available as a native desktop application for Windows, SteamDeck, Linux, and MacOS.\
 The early access alpha client is now publicly available for download on [novaplay.io](https://novaplay.io).&#x20;
 
-{% content-ref url="install-hyperplay.md" %}
-[install-hyperplay.md](install-hyperplay.md)
+{% content-ref url="install-novaplay.md" %}
+[install-novaplay.md](install-novaplay.md)
 {% endcontent-ref %}
 
 ## API Reference
