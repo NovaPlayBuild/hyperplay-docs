@@ -4,8 +4,8 @@
 
 The first step to testing your game with NovaPlay is to install the NovaPlay app.&#x20;
 
-{% content-ref url="../../install-hyperplay.md" %}
-[install-hyperplay.md](../../install-hyperplay.md)
+{% content-ref url="../../install-novaplay.md" %}
+[install-novaplay.md](../../install-novaplay.md)
 {% endcontent-ref %}
 
 **Test Your Game**
