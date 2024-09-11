@@ -133,7 +133,7 @@ Here is the TypeScript type for the response:
 		external_url: string;
 		main_capsule: string;
 		uses_overlay: boolean;
-		is_hyperplay_exclusive: boolean;
+		is_novaplay_exclusive: boolean;
 		wine_support: {
 			mac: boolean;
 			linux: boolean;
