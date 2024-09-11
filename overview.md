@@ -71,7 +71,6 @@ Thanks to the community NovaPlay was partially translated to almost 40 different
 * German
 * Greek
 * Japanese
-* Korean
 * Hungarian
 * Italian
 * Indonesian
