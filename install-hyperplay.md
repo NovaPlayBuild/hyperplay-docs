@@ -14,7 +14,7 @@ Select MetaMask Mobile, MetaMask Extension, WalletConnect, or Create a new walle
 
 <figure><img src=".gitbook/assets/select wallet.png" alt=""><figcaption></figcaption></figure>
 
-View fullscreen to verify your account is connected.
+View fullscreen to verify your account is connecte.
 
 <figure><img src=".gitbook/assets/view fullscreen.png" alt=""><figcaption><p>Connecting to metamask browser</p></figcaption></figure>
 
